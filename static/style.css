@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+
+body {
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.home_list img {
+  height: 200px;
+}
+
+.recipe_container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.recipe_container img {
+  width: 100%;
+}
+
+.ingredients{
+  width: 50%;
+  display: block;
+  float: left;
+}
+
+.description .source {
+  padding-top: 20px;
+}
+
+#myBtnContainer {
+}
+
+.home_list li {
+  float: left;
+  padding-right: 5px;
+  color: #ffffff;
+  text-align: center;
+  margin: 2px;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.filterDiv {
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
