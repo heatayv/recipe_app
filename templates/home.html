@@ -28,6 +28,7 @@
         {% for recipe in recipes %}
         <li class="filterDiv {{recipe['formatted_tags']}}"> <a href="/{{recipe['name']}}"><img src="{{ recipe['photo'] }}"> <br /> {{ recipe['name'] }} </a></li>
         {% endfor %}
+        
     </ul>
   </div>
 

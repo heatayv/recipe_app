@@ -14,6 +14,12 @@ a {
   height: 200px;
 }
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .recipe_container {
   width: 50%;
   margin: 0 auto;
@@ -23,14 +29,18 @@ a {
   width: 100%;
 }
 
-.ingredients{
+.recipe_ingredients{
   width: 50%;
   display: block;
   float: left;
 }
 
-.description .source {
+.recipe_description .recipe_source {
   padding-top: 20px;
+}
+
+.recipe_image, .recipe_title {
+  
 }
 
 #myBtnContainer {

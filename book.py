@@ -13,7 +13,8 @@ recipes = [
         'tags': ['Entree', 'Vegetarian', 'Quick', 'Heather'],
         'formatted_tags': '',
         'source_name':'Bon Appetit',
-        'source':'https://www.bonappetit.com/recipe/zaatar-chicken-with-garlicky-yogurt'
+        # 'source':'chicken-caesar-sandwich-test.jpg'
+        'source': 'http://heatherayvazian.com/images/italy-florence-city.jpg'
     },
     {
         'name': 'Kufta Yakina',
@@ -24,7 +25,32 @@ recipes = [
         'tags': ['Armenian', 'Heather', 'Soup', 'Bon Appetit'],
         'formatted_tags': '',
         'source_name':'Bon Appetit',
-        'source':'https://www.bonappetit.com/recipe/zaatar-chicken-with-garlicky-yogurt'
+        # 'source':'chicken-caesar-sandwich-test.jpg'
+        'source':'http://heatherayvazian.com/images/italy-florence-city.jpg'
+    },
+    {
+        'name': 'Kufta Yakina3',
+        'ingredients': ['lamb', 'yogurt', 'mint','test'],
+        'ingredients_subset': ['spaghetti', 'meatballs', 'sauce'],
+        'directions': 'Make the kuftas, then make the soup. Apostraphes are the undoing of good code. test',
+        'photo': 'http://heatherayvazian.com/images/italy-florence-view.jpg',
+        'tags': ['Armenian', 'Heather', 'Soup', 'Bon Appetit'],
+        'formatted_tags': '',
+        'source_name':'Bon Appetit',
+        # 'source':'chicken-caesar-sandwich-test.jpg'
+        'source':'http://heatherayvazian.com/images/italy-florence-view.jpg'
+    },
+    {
+        'name': 'Kufta Yakina',
+        'ingredients': ['lamb', 'yogurt', 'mint'],
+        'ingredients_subset': ['spaghetti', 'meatballs', 'sauce'],
+        'directions': 'Make the kuftas, then make the soup. Apostraphes are the undoing of good code.',
+        'photo': 'http://heatherayvazian.com/images/italy-florence-city.jpg',
+        'tags': ['Armenian', 'Heather', 'Soup', 'Bon Appetit'],
+        'formatted_tags': '',
+        'source_name':'Bon Appetit',
+        # 'source':'chicken-caesar-sandwich-test.jpg'
+        'source':'http://heatherayvazian.com/images/italy-florence-city.jpg'
     }
 ]
 
