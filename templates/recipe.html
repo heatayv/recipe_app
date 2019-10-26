@@ -6,6 +6,7 @@
     <title>{{ x['name'] }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="recipe_container"> 
@@ -14,6 +15,7 @@
 <img src="{{ x['photo'] }}">
 </div>
 
+<div class="recipe_content_mobile">
 <div class="row recipe_title">
 <h1>{{ x['name']}}</h1>
 </div>
@@ -42,6 +44,7 @@
 
 <div class="row recipe_source">
 <p>From <a href="{{ x['source'] }}"><strong>{{ x['source_name'] }}</strong></a></p>
+</div>
 </div>
 
 </body>

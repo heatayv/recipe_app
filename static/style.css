@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-
 body {
-	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial; 
+  color: blue;
 }
 
 a {
@@ -40,7 +40,7 @@ a {
 }
 
 .recipe_image, .recipe_title {
-  
+
 }
 
 #myBtnContainer {
@@ -85,4 +85,20 @@ a {
 .btn.active {
   background-color: #666;
   color: white;
+}
+
+
+@media (max-width: 500px) {
+
+body {
+  color: green;
+}
+
+.recipe_container {
+  width: 100%
+}
+
+.recipe_title, .recipe_description, .recipe_source {
+  padding-left: 20px;
+
 }
