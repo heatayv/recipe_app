@@ -6,32 +6,28 @@
     <title>Recipes</title>
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
   <div id=myBtnContainer>
-           <!--  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-            {% for tag in all_tags %}
-            <button class="btn" onclick="filterSelection('Soup')"> {{ tag }} </button>
-            {% endfor %}
-  </div> -->
-  <div id=myBtnContainer>
-            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-            <button class="btn" onclick="filterSelection('Soup')"> Soups</button>
-            <button class="btn" onclick="filterSelection('Entree')"> Entrees</button> 
-            <button class="btn" onclick="filterSelection('Bon Appetit')"> Bon Appetit</button> 
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('Soup')"> Soups</button>
+    <button class="btn" onclick="filterSelection('Entree')"> Entrees</button> 
+    <button class="btn" onclick="filterSelection('Bon Appetit')"> Bon Appetit</button> 
+    <button class="btn" onclick="filterSelection('Soup')"> Soups</button>
+    <button class="btn" onclick="filterSelection('Entree')"> Entrees</button> 
+    <button class="btn" onclick="filterSelection('Bon Appetit')"> Bon Appetit</button> 
   </div>
 
-  <div class="container">
-    <ul class="home_list">
+  <div id="home_recipes_container">
+    <ul class="home_recipes">
         {% for recipe in recipes %}
         <li class="filterDiv {{recipe['formatted_tags']}}"> <a href="/{{recipe['name']}}"><img src="{{ recipe['photo'] }}"> <br /> {{ recipe['name'] }} </a></li>
         {% endfor %}
-        
     </ul>
   </div>
-
 
 <script>
 filterSelection("all")

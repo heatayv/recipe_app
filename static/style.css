@@ -2,15 +2,14 @@
 
 body {
 	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial; 
-  color: blue;
 }
 
 a {
-  color: black;
   text-decoration: none;
+  color: black;
 }
 
-.home_list img {
+.home_recipes img {
   height: 200px;
 }
 
@@ -44,18 +43,15 @@ a {
 }
 
 #myBtnContainer {
+  padding-left: 40px;
 }
 
-.home_list li {
+.home_recipes li {
   float: left;
   padding-right: 5px;
   color: #ffffff;
   text-align: center;
   margin: 2px;
-}
-
-.container {
-  overflow: hidden;
 }
 
 .filterDiv {
@@ -87,11 +83,18 @@ a {
   color: white;
 }
 
-
 @media (max-width: 500px) {
+.btn {
+  margin-bottom: 10px; 
+}
 
-body {
-  color: green;
+#myBtnContainer, .home_recipes {
+  padding-left: 0;
+}
+
+.home_recipes img {
+  width: 100%;
+  height: auto;
 }
 
 .recipe_container {
