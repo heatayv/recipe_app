@@ -5,53 +5,93 @@ app = Flask(__name__)
 
 recipes = [
     {
-        'name': 'Spaghetti 2',
+        'name': 'Beans on Toast',
         'ingredients': ['spaghetti', 'meatballs', 'sauce'],
         'ingredients_subset': ['spaghetti', 'meatballs', 'sauce','Entree', 'Vegetarian', 'Quick', 'Heather'],
         'directions': 'Preheat oven to 325°. Pat chicken legs dry with paper towels. Arrange chicken, onions, halved garlic heads, and lemon in a 13x9" baking dish; season liberally with salt (remember to season both sides of chicken). Pour in oil and toss everything to coat. Turn garlic cut side down and nestle it in so it is in contact with the baking dish. Roast, rotating pan halfway through, until meat is almost falling off the bone, 50–60 minutes. Meanwhile, finely grate 1 garlic clove into a small bowl. Add yogurt, a big pinch of salt, and 1 Tbsp. water and mix well. Set aside yogurt sauce.',
-        'photo': 'http://heatherayvazian.com/images/italy-florence-bust.jpg',
+        'photo': '/static/beans-on-toast.jpg',
         'tags': ['Entree', 'Vegetarian', 'Quick', 'Heather'],
         'formatted_tags': '',
         'source_name':'Bon Appetit',
-        # 'source':'chicken-caesar-sandwich-test.jpg'
-        'source': 'http://heatherayvazian.com/images/italy-florence-city.jpg'
+        'source': 'https://www.bonappetit.com/recipe/weeknight-beans-on-toast'
     },
     {
-        'name': 'Kufta Yakina',
+        'name': 'Chicken Caeser Sandwiches',
         'ingredients': ['lamb', 'yogurt', 'mint'],
         'ingredients_subset': ['spaghetti', 'meatballs', 'sauce'],
         'directions': 'Make the kuftas, then make the soup. Apostraphes are the undoing of good code.',
-        'photo': 'http://heatherayvazian.com/images/italy-florence-city.jpg',
+        'photo': '/static/chicken-caesar-sandwich.jpg',
         'tags': ['Armenian', 'Heather', 'Soup', 'Bon Appetit'],
         'formatted_tags': '',
         'source_name':'Bon Appetit',
-        # 'source':'chicken-caesar-sandwich-test.jpg'
-        'source':'http://heatherayvazian.com/images/italy-florence-city.jpg'
+        'source':'https://www.bonappetit.com/recipe/weeknight-beans-on-toast'
     },
     {
-        'name': 'Kufta Yakina3',
-        'ingredients': ['lamb', 'yogurt', 'mint','test'],
-        'ingredients_subset': ['spaghetti', 'meatballs', 'sauce'],
-        'directions': 'Make the kuftas, then make the soup. Apostraphes are the undoing of good code. test',
-        'photo': 'http://heatherayvazian.com/images/italy-florence-view.jpg',
-        'tags': ['Armenian', 'Heather', 'Soup', 'Bon Appetit'],
+        'name': 'Chicken Escabeche',
+        'ingredients': ['spaghetti', 'meatballs', 'sauce'],
+        'ingredients_subset': ['spaghetti', 'meatballs', 'sauce','Entree', 'Vegetarian', 'Quick', 'Heather'],
+        'directions': 'Preheat oven to 325°. Pat chicken legs dry with paper towels. Arrange chicken, onions, halved garlic heads, and lemon in a 13x9" baking dish; season liberally with salt (remember to season both sides of chicken). Pour in oil and toss everything to coat. Turn garlic cut side down and nestle it in so it is in contact with the baking dish. Roast, rotating pan halfway through, until meat is almost falling off the bone, 50–60 minutes. Meanwhile, finely grate 1 garlic clove into a small bowl. Add yogurt, a big pinch of salt, and 1 Tbsp. water and mix well. Set aside yogurt sauce.',
+        'photo': '/static/chicken-escabeche.jpg',
+        'tags': ['Entree', 'Vegetarian', 'Quick', 'Heather'],
         'formatted_tags': '',
         'source_name':'Bon Appetit',
-        # 'source':'chicken-caesar-sandwich-test.jpg'
-        'source':'http://heatherayvazian.com/images/italy-florence-view.jpg'
+        'source': 'https://www.bonappetit.com/recipe/weeknight-beans-on-toast'
     },
     {
-        'name': 'Kufta Yakina',
-        'ingredients': ['lamb', 'yogurt', 'mint'],
-        'ingredients_subset': ['spaghetti', 'meatballs', 'sauce'],
-        'directions': 'Make the kuftas, then make the soup. Apostraphes are the undoing of good code.',
-        'photo': 'http://heatherayvazian.com/images/italy-florence-city.jpg',
-        'tags': ['Armenian', 'Heather', 'Soup', 'Bon Appetit'],
+        'name': 'Crispy Chickpea Salad',
+        'ingredients': ['spaghetti', 'meatballs', 'sauce'],
+        'ingredients_subset': ['spaghetti', 'meatballs', 'sauce','Entree', 'Vegetarian', 'Quick', 'Heather'],
+        'directions': 'Preheat oven to 325°. Pat chicken legs dry with paper towels. Arrange chicken, onions, halved garlic heads, and lemon in a 13x9" baking dish; season liberally with salt (remember to season both sides of chicken). Pour in oil and toss everything to coat. Turn garlic cut side down and nestle it in so it is in contact with the baking dish. Roast, rotating pan halfway through, until meat is almost falling off the bone, 50–60 minutes. Meanwhile, finely grate 1 garlic clove into a small bowl. Add yogurt, a big pinch of salt, and 1 Tbsp. water and mix well. Set aside yogurt sauce.',
+        'photo': '/static/chickpea-salad.jpg',
+        'tags': ['Entree', 'Vegetarian', 'Quick', 'Heather'],
         'formatted_tags': '',
         'source_name':'Bon Appetit',
-        # 'source':'chicken-caesar-sandwich-test.jpg'
-        'source':'http://heatherayvazian.com/images/italy-florence-city.jpg'
-    }
+        'source': 'https://www.bonappetit.com/recipe/weeknight-beans-on-toast'
+    },
+    {
+        'name': 'Poached Cod in Tomato Curry',
+        'ingredients': ['spaghetti', 'meatballs', 'sauce'],
+        'ingredients_subset': ['spaghetti', 'meatballs', 'sauce','Entree', 'Vegetarian', 'Quick', 'Heather'],
+        'directions': 'Preheat oven to 325°. Pat chicken legs dry with paper towels. Arrange chicken, onions, halved garlic heads, and lemon in a 13x9" baking dish; season liberally with salt (remember to season both sides of chicken). Pour in oil and toss everything to coat. Turn garlic cut side down and nestle it in so it is in contact with the baking dish. Roast, rotating pan halfway through, until meat is almost falling off the bone, 50–60 minutes. Meanwhile, finely grate 1 garlic clove into a small bowl. Add yogurt, a big pinch of salt, and 1 Tbsp. water and mix well. Set aside yogurt sauce.',
+        'photo': '/static/poached-cod-tomato-curry.jpg',
+        'tags': ['Entree', 'Vegetarian', 'Quick', 'Heather'],
+        'formatted_tags': '',
+        'source_name':'Bon Appetit',
+        'source': 'https://www.bonappetit.com/recipe/weeknight-beans-on-toast'
+    },
+    {
+        'name': 'Grilled Pork Tenderloin with Peach Sauce',
+        'ingredients': ['spaghetti', 'meatballs', 'sauce'],
+        'ingredients_subset': ['spaghetti', 'meatballs', 'sauce','Entree', 'Vegetarian', 'Quick', 'Heather'],
+        'directions': 'Preheat oven to 325°. Pat chicken legs dry with paper towels. Arrange chicken, onions, halved garlic heads, and lemon in a 13x9" baking dish; season liberally with salt (remember to season both sides of chicken). Pour in oil and toss everything to coat. Turn garlic cut side down and nestle it in so it is in contact with the baking dish. Roast, rotating pan halfway through, until meat is almost falling off the bone, 50–60 minutes. Meanwhile, finely grate 1 garlic clove into a small bowl. Add yogurt, a big pinch of salt, and 1 Tbsp. water and mix well. Set aside yogurt sauce.',
+        'photo': '/static/pork-peach-mustard.jpg',
+        'tags': ['Entree', 'Vegetarian', 'Quick', 'Heather'],
+        'formatted_tags': '',
+        'source_name':'Bon Appetit',
+        'source': 'https://www.bonappetit.com/recipe/weeknight-beans-on-toast'
+    },
+    {
+        'name': 'Tomato Toast',
+        'ingredients': ['spaghetti', 'meatballs', 'sauce'],
+        'ingredients_subset': ['spaghetti', 'meatballs', 'sauce','Entree', 'Vegetarian', 'Quick', 'Heather'],
+        'directions': 'Preheat oven to 325°. Pat chicken legs dry with paper towels. Arrange chicken, onions, halved garlic heads, and lemon in a 13x9" baking dish; season liberally with salt (remember to season both sides of chicken). Pour in oil and toss everything to coat. Turn garlic cut side down and nestle it in so it is in contact with the baking dish. Roast, rotating pan halfway through, until meat is almost falling off the bone, 50–60 minutes. Meanwhile, finely grate 1 garlic clove into a small bowl. Add yogurt, a big pinch of salt, and 1 Tbsp. water and mix well. Set aside yogurt sauce.',
+        'photo': '/static/tomato-toast.jpg',
+        'tags': ['Entree', 'Vegetarian', 'Quick', 'Heather'],
+        'formatted_tags': '',
+        'source_name':'Bon Appetit',
+        'source': 'https://www.bonappetit.com/recipe/weeknight-beans-on-toast'
+    },
+    {
+        'name': 'Zaatar Chicken',
+        'ingredients': ['spaghetti', 'meatballs', 'sauce'],
+        'ingredients_subset': ['spaghetti', 'meatballs', 'sauce','Entree', 'Vegetarian', 'Quick', 'Heather'],
+        'directions': 'Preheat oven to 325°. Pat chicken legs dry with paper towels. Arrange chicken, onions, halved garlic heads, and lemon in a 13x9" baking dish; season liberally with salt (remember to season both sides of chicken). Pour in oil and toss everything to coat. Turn garlic cut side down and nestle it in so it is in contact with the baking dish. Roast, rotating pan halfway through, until meat is almost falling off the bone, 50–60 minutes. Meanwhile, finely grate 1 garlic clove into a small bowl. Add yogurt, a big pinch of salt, and 1 Tbsp. water and mix well. Set aside yogurt sauce.',
+        'photo': '/static/zaatar-chicken.jpg',
+        'tags': ['Entree', 'Vegetarian', 'Quick', 'Heather'],
+        'formatted_tags': '',
+        'source_name':'Bon Appetit',
+        'source': 'https://www.bonappetit.com/recipe/weeknight-beans-on-toast'
+    },
 ]
 
 def format_tags(): 
