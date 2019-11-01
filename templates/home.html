@@ -13,12 +13,22 @@
 
   <div id=myBtnContainer>
     <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-    <button class="btn" onclick="filterSelection('Soup')"> Soups</button>
-    <button class="btn" onclick="filterSelection('Entree')"> Entrees</button> 
+
     <button class="btn" onclick="filterSelection('Bon Appetit')"> Bon Appetit</button> 
-    <button class="btn" onclick="filterSelection('Soup')"> Soups</button>
+    <button class="btn" onclick="filterSelection('Purple Carrot')"> Purple Carrot</button> 
+
+    <button class="btn" onclick="filterSelection('Vegetarian')"> Vegetarian</button>
+
     <button class="btn" onclick="filterSelection('Entree')"> Entrees</button> 
-    <button class="btn" onclick="filterSelection('Bon Appetit')"> Bon Appetit</button> 
+    <button class="btn" onclick="filterSelection('Soup')"> Soups</button>
+    <button class="btn" onclick="filterSelection('Salad')"> Salads</button>
+    <button class="btn" onclick="filterSelection('Bowl')"> Bowls</button>
+
+    <button class="btn" onclick="filterSelection('Mexican')"> Mexican</button>
+    <button class="btn" onclick="filterSelection('Asian')"> Asian</button>
+
+    <button class="btn" onclick="filterSelection('Heather')"> Heather</button>
+    <button class="btn" onclick="filterSelection('Kevin')"> Kevin</button>
   </div>
 
   <div id="home_recipes_container">
@@ -28,6 +38,7 @@
         {% endfor %}
     </ul>
   </div>
+
 
 <script>
 filterSelection("all")
