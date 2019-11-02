@@ -39,11 +39,15 @@
 </div>
 
 <div class="row recipe_description">
-<p>{{ x['directions'] }}</p>
+<ul>
+	{% for direction in x['directions'] %}
+	<li>{{ direction }}</li>
+	{% endfor %}
+</ul>
 </div>
 
 <div class="row recipe_source">
-<p>From <a href="{{ x['source'] }}"><strong>{{ x['source_name'] }}</strong></a></p>
+<p>From <a href="{{ x['source'] }}" target="_blank"><strong>{{ x['source_name'] }}</strong></a></p>
 </div>
 
 </div>

@@ -38,6 +38,15 @@ a {
   padding-top: 20px;
 }
 
+.recipe_description li {
+  padding-bottom: 20px;
+  list-style-type: none;
+}
+
+.recipe_description ul {
+  padding-left: 0px;
+}
+
 .recipe_image, .recipe_title {
 
 }
