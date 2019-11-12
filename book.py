@@ -1,20 +1,9 @@
-import requests
-import gc
+# import requests
+# import gc
 from flask import Flask, render_template
 app = Flask(__name__)
 
 recipes = [
-    # {
-    #     'name': 'Template',
-    #     'ingredients': [],
-    #     'ingredients_subset': [],
-    #     'directions': '',
-    #     'photo': '/static/images/NAME.jpg',
-    #     'tags': ['NAME', 'CATEGORY', 'VEG', 'COUNTRY'],
-    #     'formatted_tags': '',
-    #     'source_name':'',
-    #     'source': ''
-    # },
     {
         'name': 'Beans on Toast',
         'ingredients': [],
@@ -111,7 +100,7 @@ recipes = [
         'photo': '/static/images/sesame-ginger-salmon.jpg',
         'tags': ['Heather', 'Entree', 'Favorite', 'Easy'],
         'formatted_tags': '',
-        'source_name':'Online',
+        'source_name':'Damn Delicious',
         'source': 'https://damndelicious.net/2013/11/13/sesame-ginger-salmon/'
     },
     {
@@ -123,7 +112,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Bowl', 'Vegetarian', 'Mexican'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/elote-bowl.jpg'
     },
     {
         'name': 'Take-out Style Noodles',
@@ -134,7 +123,7 @@ recipes = [
         'tags': ['Heather', 'Entree', 'Vegetarian', 'Asian', 'Favorite'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/take-out-style-noodles.jpg'
     },
     {
         'name': 'Canh Chua Vietnamese Soup',
@@ -145,7 +134,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Soup', 'Vegetarian', 'Asian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/canh-chua-vietnamese-soup.jpg'
     },
     {
         'name': 'Fiesta Enchilada Skillet',
@@ -156,7 +145,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Mexican'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/fiesta-enchilada-skillet.jpg'
     },
     {
         'name': 'Thai Vegetable Stir-fry',
@@ -167,7 +156,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Asian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/thai-vegetable-stir-fry.jpg'
     },
     {
         'name': 'Japanese Yam Sushi Bowl',
@@ -178,7 +167,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Bowl', 'Vegetarian', 'Asian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/japanese-yam-sushi-bowl.jpg'
     },
     {
         'name': 'Vegan Mac and Cheese',
@@ -189,7 +178,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/vegan-mac-and-cheese.jpg'
     },
     {
         'name': 'Bahn Mi Burgers',
@@ -200,7 +189,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Asian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/bahn-mi-burgers.jpg'
     },
     {
         'name': 'Coconut Curry Udon Noodles',
@@ -211,7 +200,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Asian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/coconut-curry-udon-noodles.jpg'
     },
     {
         'name': 'Butternut Squash Gnocchi',
@@ -222,7 +211,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/butternut-squash-gnocchi.jpg'
     },
     {
         'name': 'Autumn Bibimbap',
@@ -233,7 +222,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', "Asian"],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/autumn-bibimbap.jpg'
     },
     {
         'name': 'Tofu Halloumi',
@@ -244,7 +233,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/tofu-halloumi.jpg'
     },
     {
         'name': 'Buffalo Cauliflower Salad',
@@ -255,7 +244,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Salad', 'Vegetarian', 'Mediterranean'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/buffalo-cauliflower-salad.jpg'
     },
     {
         'name': 'Eggplant Flatbreads',
@@ -266,7 +255,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/eggplant-flatbreads.jpg'
     },
     {
         'name': 'Sweet Potato Black Bean Tacos',
@@ -277,7 +266,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Mexican'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/sweet-potato-black-bean-tacos.jpg'
     },
     {
         'name': 'Jeweled Biryani',
@@ -288,7 +277,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Asian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/jeweled-biryani.jpg'
     },
     {
         'name': 'Five-spice Tofu Stir-fry',
@@ -299,7 +288,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Asian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/five-spice-tofu-stir-fry.jpg'
     },
     {
         'name': 'Italian Cannellini Bean Stew',
@@ -310,7 +299,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Soup', 'Italian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/italian-cannellini-bean-stew.jpg'
     },
     {
         'name': 'Black Bean Burgers',
@@ -321,7 +310,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/black-bean-burgers.jpg'
     },
     {
         'name': 'Nicoise Salad',
@@ -332,7 +321,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Salad', 'Vegetarian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/nicoise-salad.jpg'
     },
     {
         'name': 'Corn Crab Dumplings',
@@ -343,7 +332,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Asian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/corn-crab-dumplings.jpg'
     },
     {
         'name': 'Tomato-braised Artichokes',
@@ -354,7 +343,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/tomato-braised-artichokes.jpg'
     },
     {
         'name': 'Crispy Buckwheat Bowl',
@@ -365,7 +354,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Lunch' 'Vegetarian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/crispy-buckwheat-bowl.jpg'
     },
     {
         'name': 'Beef Bulgogi Bowl',
@@ -376,7 +365,7 @@ recipes = [
         'tags': ['Heather', 'Entree', 'Bowl', 'Asian',],
         'formatted_tags': '',
         'source_name':'Hello Fresh',
-        'source': ''
+        'source': '/static/sources/beef-bulgogi-bowls.jpg'
     },
     {
         'name': 'Israeli Stuffed Peppers',
@@ -384,10 +373,10 @@ recipes = [
         'ingredients_subset': [],
         'directions': ['Preheat oven to 425°F.', 'Cook rice with 1 1/4 cups water for 15-20 min.', 'Prep: dissolve bouillon cube in 1/2 cup hot water, dice carrot and onion, thinly slice garlic, butterfly the peppers.', 'Make the filling: heat oil over medium-high heat, add carrot, onion, 1/2 garlic, salt, and cook 5-6 min. Increase heat to high, add oil and bouillon broth, cook 4-6 more min. Add almonds, Israeli spice blend, and dried cherries and cook 2-3 min.', 'Stuff the peppers and roast in oven 8-10 min.', 'Saute spinach: heat oil over high heat, add remaining garlic, baby spinach, salt, pepper, and cook 2-3 min.', 'Serve peppers over rice with spinach on side.'],
         'photo': '/static/images/israeli-stuffed-peppers.jpg',
-        'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Favorite'],
+        'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/israeli-stuffed-peppers.jpg'
     },
     {
         'name': 'Watermelon Poke Bowls',
@@ -398,7 +387,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Asian', 'Easy'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/watermelon-poke-bowls.jpg'
     },
     {
         'name': 'Chicken Sausage Spinach Ricotta Ravioli',
@@ -409,7 +398,7 @@ recipes = [
         'tags': ['Heather', 'Entree'],
         'formatted_tags': '',
         'source_name':'Hello Fresh',
-        'source': ''
+        'source': '/static/sources/chicken-sausage-spinach-ricotta-ravioli.jpg'
     },
     {
         'name': 'Creamy Miso Risotto',
@@ -420,9 +409,430 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Favorite'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': ''
+        'source': '/static/sources/creamy-miso-risotto.jpg'
     },
+    {
+        'name': 'Spinach plum salad',
+        'ingredients': ['spinach', '2 plums', '1 lemon'],
+        'ingredients_subset': [],
+        'directions': ['Roughly chop spinach and slice plums.', 'Mix and toss with 1 tbsp lemon juice, 2 tbsp olive oil, salt, and pepper. '],
+        'photo': '/static/images/spinach-plum-salad.jpg',
+        'tags': ['Heather', 'Purple Carrot', 'Salad', 'Small Plate'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': '/static/sources/spinach-plum-salad.jpg'
+    },
+    {
+        'name': 'Spicy Garlic Shrimp',
+        'ingredients': ['12 jumbo shrimp', '2 tbsp olive oil', '2 garlic cloves', '1/4 tsp red pepper flakes', '1 tsp McMcormick Montreal Steak Seasoning', '1 lemon', 'fresh parsley (optional)'],
+        'ingredients_subset': [],
+        'directions': ['Heat oil over medium-high heat and add garlic, red pepper flakes, and shrimp.', 'Cook ~3 min and toss with lemon zest and juice and parsley.'],
+        'photo': '/static/images/spicy-garlic-shrimp.jpg',
+        'tags': ['Heather', 'Small Plate', 'Seafood', 'Easy'],
+        'formatted_tags': '',
+        'source_name':'Online',
+        'source': 'https://www.food.com/recipe/4-minute-spicy-garlic-shrimp-107997'
+    },
+    {
+        'name': 'Vegan Tomato Kibbeh',
+        'ingredients': ['1 1/2 cups fine bulgur', '5 sprigs fresh parsley', '2 sprigs frest mint', '2 tsp crushed dried mint', '1 sweet onion', '2 large tomatoes', '1/2 red bell pepper', '1/2 tsp cinnamon', '1/4 tsp cayanne pepper', '1 lemon'],
+        'ingredients_subset': [],
+        'directions': ['Prep: coursely chop onion, bell pepper, and tomatoes.', 'In a food processor, pulse the parsley and mint until they are finely chopped, but not pureed. Add the onion and continue pulsing until it is also finely chopped.', 'In a bowl, combine bulgur and mixture from food processor.', 'Pulse tomatoes and red bell pepper in the processor a few times until they are finely chopped but not liquid, then add to bowl.','Knead bowl mixtur, seasoning with salt, pepper, cinnamon, cayenne, crushed dried mint, lemon juice, and 1/2 cup olive oil.', 'Let rest 1 hr at room temp, then serve spread out about 1/2 inch thick and drizzle with more olive oil.'],
+        'photo': '/static/images/vegan-tomato-kibbeh.jpg',
+        'tags': ['Heather', 'Small Plate', 'Vegetarian', 'Easy'],
+        'formatted_tags': '',
+        'source_name':'Online',
+        'source': 'https://www.splendidtable.org/recipes/vegan-tomato-kibbeh'
+    },
+    {
+        'name': 'Greek Chicken Tabbouleh Salad',
+        'ingredients': ['3 tbsp red wine vinegar', '2 tablespoons olive oil', '1 tsp sugar', '1/2 tsp black pepper', '1 pouch seven whole-grains mix', '2 cups rotisserie chicken', '1 cup grape tomatoes', '1/4 cup red onion', '1/4 cup fresh parsley', '1/4 cup fresh mint', '1 cucumber', '2 oz feta cheese'],
+        'ingredients_subset': [],
+        'directions': ['Prep: halve tomatoes, chop red onion, parsley, mint, and cucumber, and shred rotisserie chicken.', 'Whisk first 4 ingreients in large bowl. Add grains and toss. Add chicken and remaining ingredients.'],
+        'photo': '/static/images/greek-chicken-tabbouleh-salad.jpg',
+        'tags': ['Heather', 'Salad', 'Easy'],
+        'formatted_tags': '',
+        'source_name':'Weight Watchers',
+        'source': '/static/sources/greek-chicken-tabbouleh-salad.jpg'
+    },
+    {
+        'name': 'Chicken Salad',
+        'ingredients': ['1 lb chicken breast', '1 1/4 cup chopped golden delicious, gala, or fuji apples', '1/3 cup chopped pecans', '1/3 cup dried cranberries', 'whole grain bread or lettuce wraps'],
+        'ingredients_subset': ['5.3 oz fat-free plain greek yogurt', '2 tbsp mayo', '1 tbsp red wine vinegar', '2 1/2 tsp rosemary', '1 tsp dijon mustard', '1/2 tsp honey', '1/2 tsp onion powder', 'salt', 'pepper'],
+        'directions': ['Preheat oven to 425 degrees F. Brush chicken with olive oil, salt, pepper, and bake for 16-23 min.', 'Dice chicken, chop pecans and apples.','Add chicken, apples, pecans, and cranberries to a large bowl. Mix dressing, add and toss.'],
+        'photo': '/static/images/chicken-salad.jpg',
+        'tags': ['Heather', 'Entree', 'Easy'],
+        'formatted_tags': '',
+        'source_name':'Cooking classy',
+        'source': 'https://www.cookingclassy.com/apple-pecan-rosemary-greek-yogurt-chicken-salad/'
+    },
+    {
+        'name': 'Greek Chicken Pasta Salad',
+        'ingredients': ['2 chicken breasts', '8 oz shell pasta', '1 bell pepper', '4 oz grape tomatoes', '1/2 cucumber', 'fresh parsley', '2 oz feta'],
+        'ingredients_subset': ['1 lemon', '1/4 cup olive oil', '3 cloves garlic', '1/2 tbsp oregano', 'salt', 'pepper'],
+        'directions': ['Preheat oven to 425 degrees F. Brush chicken with olive oil, salt, pepper, and bake for 16-23 min.', 'Cook pasta, chop vegetables.', 'Add everything to a bowl and mix in dressing.'],
+        'photo': '/static/images/greek-chicken-pasta-salad.jpg',
+        'tags': ['Heather', 'Entree', 'Easy','Favorite'],
+        'formatted_tags': '',
+        'source_name':'Budget Bytes',
+        'source': 'https://www.budgetbytes.com/greek-chicken-pasta-salad/'
+    },
+    {
+        'name': 'Pork dumplings',
+        'ingredients': ['100 wonton wrappers', '1 3/4 lbs ground pork', '1 tbsp fresh ginger', '4 cloves garlic', '2 tbsp green onion', '4 tbsp soy sauce', '3 tbsp sesame oil', '1 egg', '5 cups shredded Chinese cabbage'],
+        'ingredients_subset': [],
+        'directions': ['Mix filling in a large bowl.', 'Fold into wrappers.', 'Cook dumplings: heat oil over medium heat, add dumplings and cook until browned and crispy, 2-3 min. Flip and cook additional min. Add 1/3 cup water, reduce heat to medium, and cover. Steam 3-4 min.'],
+        'photo': '/static/images/pork-dumplings.jpg',
+        'tags': ['Heather', 'Entree', 'Asian'],
+        'formatted_tags': '',
+        'source_name':'All Recipes',
+        'source': 'https://www.allrecipes.com/recipe/14759/pork-dumplings/'
+    },
+    {
+	    'name': 'Harvest Skillet',
+	    'ingredients': ['1 lb chicken breast', '4 thick-cut bacon', '3 cups Brussels sprouts', '1 sweet potato', '1 onion', '2 apples', '4 cloves garlic', '2 tsp fresh thyme', '1 tsp cinnamon', '1 cup chicken broth'],
+	    'ingredients_subset': [],
+	    'directions': ['Heat oil over medium high heat, add chicken, salt, and pepper. Cook ~5 min until lightly browned and cooked through, transfer to plate.', 'Reduce skillet to medium low, add bacon and cook ~8 min until done, transfer to plate. Discard all but 1 1/2 tbsp bacon fat from pan.','Increase skillet heat to medium high, add Brussels sprouts, sweet potato, onion, and salt. Cook ~10 min.', 'Stir in apples, garlic, thyme, and cinnamon, and cook 30 sec. Pour in 1/2 cup chicken broth, bring to a boil, cook until evaporated ~2 min.','Add the chicken and 1/2 cup chicken broth, cook ~2 min.', 'Add bacon and serve.'],
+	    'photo': '/static/images/harvest-skillet.jpg',
+	    'tags': ['Heather', 'Entree'],
+	    'formatted_tags': '',
+	    'source_name':'Well Plated',
+	    'source': 'https://www.wellplated.com/chicken-apple-sweet-potato-and-brussels-sprouts-skillet/',
+	 },
+	 {
+	    'name': 'Tunisian Chickpea Stew',
+	    'ingredients': ['3 tbsp olive oil', '1 onion', '3 carrots', '6 cloves garlic', '1 tbsp fresh thyme, sage, or bay leaves', '1 tsp cumin', '1 tsp coriander', '1 tsp smoked paprika', '1 tsp tumeric', '1 tsp fennel seeds', '2 tbsp tomato paste', '2 tomatoes', '1 cup white wine', '4 cups chicken broth', '4 cups chickpeas', '1 bunch kale', 'plain greek yogurt', 'harissa paste'],
+	    'ingredients_subset': [],
+	    'directions': ['Prep: dice onion, garlic, and tomatoes. Cut kale into 1-2 inch ribbons. Peel and cut carrots into 1/2 inch thick half moons','Heat oil in large pot over medium high heat, add onion, carrot, garlic, salt, and pepper. Saute for 5 min, turn heat to medium.','Add cumin, coriander, smoked paprika,tumeric, fennel seeds, and tomato paste. Saute ~2 min until darkens.', 'Add tomatoes and wine, bring to a boil, scrape up brown bits, reduce by half ~5 min.', 'Add broth.', 'Add chickpeas, kale, and carrot tops (optional). Simmer on medium-low for 10-15 min.', 'Serve in bowls and top with yogurt and harissa.'],
+	    'photo': '/static/images/tunisian-chickpea-stew.jpg',
+	    'tags': ['Heather', 'Entree'],
+	    'formatted_tags': '',
+	    'source_name':'Feasting at Home',
+	    'source': 'https://www.feastingathome.com/tunisian-chickpea-stew/',
+	 },
+	 {
+	    'name': 'Lemony Orzo Salad',
+	    'ingredients': ['1 box orzo pasta', '1 can chickpeas', '1 cucumber', '1 red onion', 'baby spinach', 'arugula', 'fresh basil', 'fresh mint', '2 lemons', 'feta or goat cheese' ],
+	    'ingredients_subset': [],
+	    'directions': ['Cook pasta, drain and rinse with cold water.', 'Prep: chop all other ingredients.', 'Combine everything in a bowl, zesting and juicing both lemons and adding salt, pepper, and olive oil. '],
+	    'photo': '/static/images/lemony-orzo-salad.jpg',
+	    'tags': ['Heather', 'Salad', 'Vegetarian'],
+	    'formatted_tags': '',
+	    'source_name':'Gimme Some Oven',
+	    'source': 'https://www.gimmesomeoven.com/herb-lovers-lemony-orzo-salad/',
+	 },
+	 {
+	    'name': 'Lemony Lentil Soup',
+	    'ingredients': ['1 onion', '2 carrots', '5 cloves garlic', '6 cups chicken stock', '1 1/2 cups red lentils', '2/3 cups whole-kernel corn', '2 tsps cumin', '1 tsp curry powder', 'cayenne pepper', '1 lemon'],
+	    'ingredients_subset': [],
+	    'directions': ['Heat oil in a large pot over medium-high heat. Add onion and carrots, saute for 5 min. Add garlic and saute for 1 more min.','Stir in chicken stock, lentils, corn, cumin, curry powder, and cayenne. Cook until simmers, then for 15 min until lentils are completely tender.', 'Using a blender, puree the soup until it reaches desired consistency.','Return pureed soup to pot, stir in lemon zest and juice, add salt and pepper.'],
+	    'photo': '/static/images/lemony-lentil-soup.jpg',
+	    'tags': ['Heather', 'Salad', 'Vegetarian'],
+	    'formatted_tags': '',
+	    'source_name':'Gimme Some Oven',
+	    'source': 'https://www.gimmesomeoven.com/lemony-lentil-soup/',
+	 },
+	 {
+	    'name': 'Breakfast casserole',
+	    'ingredients': ['12 eggs', '1 package shredded mozzerella cheese', '1/4 cup shredded parm', '1 can rotel diced tomatoes and green chilis', '1 lb sausage', '1 bunch kale (~8 oz)', 'garlic powder','Italian seasoning', 'Red pepper flakes'],
+	    'ingredients_subset': [],
+	    'directions': ['Preheat oven to 350 degrees F. Spray 13x9 pan with olive oil.', 'Cook sausage over medium heat in skillet until brown. Add red pepper and rotel, simmer ~5 min.', 'Remove sausage with slotted spoon and spread evenly over baking pan. Add kale to skillet with sausage grease/rotel juice and sprinkle with garlic powder, salt, and pepper. Stir 2-3 min until wilted, transfer to pan, let cool.', 'Beat 12 eggs in mixing bowl, add salt, pepper, and Italian seasoning.', 'Add layer of 1/2 package of mozzarella to the pan, add egg mixture to the pan, add rest of mozzarella and parm to the top. Sprinkle with Itallian seasoning.','Bake uncovered ~35-45 min. Can refrigerate overnight before baking, serves 8-10.'],
+	    'photo': '/static/images/breakfast-casserole.jpg',
+	    'tags': ['Heather'],
+	    'formatted_tags': '',
+	    'source_name':'Katherine Lalla',
+	    'source': '/static/sources/breakfast-casserole.png',
+	 },
+	 {
+	    'name': 'Pasta with Pears & Gorgonzola',
+	    'ingredients': ['12 oz rigatoni', '1/3 cup walnut pieces', '4 tbsp unsalted butter', '4 Bosc pears', '1/2 cup vegetable broth', '4 oz crumbed gorgonzola or goat cheese', '1/4 cup dried cranberries'],
+	    'ingredients_subset': [],
+	    'directions': ['Prep: boil water for pasta. Peal and core pears, cut lengthwise into 8 wedges.', 'Cook pasta, reserving 1/2 cup pasta water.', 'Heat oil in large skillet over medium heat, add walnuts and cook ~5 min then transfert to plate.', 'Add butter to skillet, once melted add pears. Cook until pears lightly brown, ~5 min. Transfer to a plate, leaving liquid in skillet.', 'Add broth to skillet, deglaze bottom of pan, add cheese and bring to a simmer. Whisk until cheese melts and sauce reduces slightly, ~5 min.', 'Add the pasta and 1/4 cup reserved pasta water to skillet, reduce heat to low and toss. Add remaining pasta water 1 tbsp at a time as needed, texture should be creamy and fluid.', 'Plate add top with pears, walnuts, and cranberries. Season with salt and pepper, can add more cheese to top.'],
+	    'photo': '/static/images/pasta-pear-gorgonzola.png',
+	    'tags': ['Heather', 'Entree', 'Vegetarian'],
+	    'formatted_tags': '',
+	    'source_name':'Kate Leland',
+	    'source': '/static/sources/pasta-pear-gorgonzola.jpg',
+	 },
+	 {
+	    'name': 'Tacos',
+	    'ingredients': ['1 lb ground beef', 'tomatoes', 'onions', 'lettuce', 'taco seasoning', 'soft taco shells', 'sour cream', 'shredded cheese', 'hot sauce'],
+	    'ingredients_subset': [],
+	    'directions': ['Cook beef with seasoning and hot sauce.', 'Assemble tacos and serve.'],
+	    'photo': '/static/images/tacos.jpg',
+	    'tags': ['Heather', 'Entree', 'Easy', 'Favorite'],
+	    'formatted_tags': '',
+	    'source_name':'Kevin <3',
+	    'source': '',
+	 },
+	 {
+	    'name': 'Vegetarian Chili',
+	    'ingredients': ['1 onion', '1 red bell pepper', '1 green bell pepper', '2 carrots', '3 cloves garlic', '1 jalapeño', '1 tbsp tomato paste', '1 15.5 oz can pinto beans', '1 can black beans', '1 can kidney beans', '1 28 oz can tomatoes', '3 cups vegetable broth', '2 tbsp chili powder', '1 tbsp cumin', '2 tsp oregano', 'shredded cheddar cheese', 'sour cream', 'cilantro'],
+	    'ingredients_subset': [],
+	    'directions': ['Prep: Chop the onion, peppers, carrots, and jalapeño. Mince the garlic. Drain and rinse the beans.', 'In large pot, heat olive oil over medium high heat and add onion, bell peppers, and carrots. Saute ~5 min then add garlic and jalapeño, cook 1 min.', 'Stir in tomoato paste. Stir in tomatoes, beans, broth, spices, salt, and pepper.', 'Bring to a boil then reduce heat and simmer for 30 min.', 'Serve and top with cheese, sour cream, and cilantro.'],
+	    'photo': '/static/images/vegetarian-chili.jpg',
+	    'tags': ['Heather', 'Soup', 'Vegetarian'],
+	    'formatted_tags': '',
+	    'source_name':'Delish',
+	    'source': 'https://www.delish.com/cooking/recipe-ideas/recipes/a58719/easy-vegetarian-chili-recipe/',
+	 },
+	 {
+	    'name': 'Cheese boregs',
+	    'ingredients': ['8 oz Muenster or Monterey Jack cheese', '15 oz ricotta cheese', '4 oz feta cheese', '1 egg', '1 pkg Fillo dough', '1/2 stick unsalted butter', 'parsley'],
+	    'ingredients_subset': [],
+	    'directions': ['Defrost the Fillo dough. Preheat oven to 350 degrees F.','Mix the cheese, egg, and parsley in a big bowl.', 'Unfold the Fillo dough and cut in half. Use one sheet for each boreg: fold in half lengthwise, brush surface with melted butter, place a spoonful of filling at the end of the folded dough, fold as though you were folding a flag - on the diagonal from corner to corner, creating a triangular shape. Brush top with butter and place on baking sheet.', 'Bake for 15-20 min.'],
+	    'photo': '/static/images/cheese-boregs.jpg',
+	    'tags': ['Heather', 'Vegetarian', 'Small Plate', 'Armenian'],
+	    'formatted_tags': '',
+	    'source_name':'The Armenian Kitchen',
+	    'source': 'https://www.thearmeniankitchen.com/2009/04/borag-bereg-boregthey-all-spell.html',
+	 },
+	 {
+	    'name': 'Teriyaki Chicken Wings',
+	    'ingredients': ['1-2 pkg chicken wings', '1 bottle LeeKum Kee chicken marinade', 'garlic powder', 'onion powder'],
+	    'ingredients_subset': [],
+	    'directions': ['Preheat oven to 350 degrees F.', 'Add wings, 1/2 - 2/3 bottle of marinade, onion powder, and garlic powder to a zip lock bag to mix.', 'Marinate 18-24 hours, shaking/mixing every 4-6 hours.','Bake 45-50 min.'],
+	    'photo': '/static/images/teriyaki-chicken-wings.jpg',
+	    'tags': ['Heather', 'Small Plate'],
+	    'formatted_tags': '',
+	    'source_name':'Aunt Ginny',
+	    'source': '/static/sources/teriyaki-chicken-wings.pdf',
+	 },
+	 {
+	    'name': 'Pasta Salad',
+	    'ingredients': ['1 box rotini', '1 cucumber', 'grape tomatoes', '1/3 block cheddar cheese', '1 ball mozzarella cheese', '1 green bell pepper', '1 red bell pepper'],
+	    'ingredients_subset': ['1/2 cup olive oil' '1/4 cup red wine vinegar', '2 cloves garlic', '1 tsp dried basil', '1 tsp dried oregano', '1/2 tsp ground mustard seed', '1/4 tsp salt', '1/8 tsp black pepper'],
+	    'directions': ['Chop vegetables','Cook, drain, and rinse pasta.', 'Mix together in big bowl and add dressing.'],
+	    'photo': '/static/images/pasta-salad.jpg',
+	    'tags': ['Heather', 'Entree', 'Vegetarian', 'Easy', 'Favorite'],
+	    'formatted_tags': '',
+	    'source_name':'All recipes',
+	    'source': 'https://www.allrecipes.com/recipe/73963/pasta-salad-with-homemade-dressing/',
+	 },
+	 {
+	    'name': 'Chai Butternut Squash Soup',
+	    'ingredients': ['2 cups vegetable stock', '2 cloves garlic', '1 carrot', '1 apple', '1 medium butternut squash', '1 small white onion', '1/8 tsp cayenne', '1-2 chai tea bags', '1/2 cup coconut milk', 'cinnamon'],
+	    'ingredients_subset': [],
+	    'directions': ['Prep: mince garlic, dice carrot, apple, squash, and onion.','Add vegetable stock, garlic, carrot, apple, squash, onion, cayenne, and chai tea bags to large pot. Cook 3-4 hours on high.', 'Remove tea bags, puree the soup until smooth, stir in coconut milk, add salt and pepper.','Serve and top with cinnamon and optional swirl of coconut milk.'],
+	    'photo': '/static/images/chai-butternut-squash-soup.jpg',
+	    'tags': ['Heather', 'Soup', 'Vegetarian'],
+	    'formatted_tags': '',
+	    'source_name':'Gimme Some Oven',
+	    'source': 'https://www.gimmesomeoven.com/chai-butternut-squash-soup/',
+	 },
+	 {
+	    'name': 'Cajun Corn Chowder',
+	    'ingredients': ['1 medium white onion', '1 green bell pepper', '2 ribs celery', '4 cloves garlic', '6 cups vegetable stock', '1 1/2 lbs Yukon potatoes', '14 oz corn', '1 cup red lentils *', '1 tsp dried thyme', '14 oz coconut milk', 'optional toppings: green onions, bacon, oyster crackers'],
+	    'ingredients_subset': ['paprika', 'salt', 'garlic powder', 'ground black pepper', 'onion powder', 'dried oregano', 'cayenne', 'thyme'],
+	    'directions': ['Prep: dice onion, bell pepper, and celery. Mince garlic. Dice potatoes into 1/2 inch cubes.','Heat oil in large pot over medium-high heat.', 'Add onion and saute for 3 min. Add bell pepper, celery and garlic, and saute for 5 more min.', 'Stir in vegetable stock, potatoes, corn, lentils, cajun seasoning, thyme, and salt.','When simmers, reduce heat to medium-low and cook for 10-15 min, stirring occassionally, until potatoes and lentils tender. Stir in coconut milk.', 'Serve with toppings.', '* Whole red lentils take about 15 minutes to cook.  Split red lentils only take ~7-8 min, so if using those then add them halfway through the potatoes’ cooking time.'],
+	    'photo': '/static/images/cajun-corn-chowder.jpg',
+	    'tags': ['Heather', 'Soup', 'Vegetarian'],
+	    'formatted_tags': '',
+	    'source_name':'Gimme Some Oven',
+	    'source': 'https://www.gimmesomeoven.com/cajun-corn-chowder/',
+	 },
+	 {
+	    'name': 'Thai Yam Soup',
+	    'ingredients': ['2 large shallots or 1 white onion', '2 tbsp coconut oil', '6 cloves garlic', '1/2 cup lemongrass', '1/4 cup ginger', '1 small spicy chili', '1 tsp yellow curry powder', '1/2 tsp tumeric', '4 cups vegetable or chick stock', '2 cups water', '2 lbs yams or sweet potatoes', '1 carrot', '1/2 cup coconut milk', '2 tsp brown sugar', '3 tsp soy or fish sauce', '2 tbsp lime juice','optional garnishs: cilantro, coconut milk, scallions, Sriracha, lime'],
+	    'ingredients_subset': [],
+	    'directions': ['Prep: dice shallot or onion, chili, and carrot; finely chop garlic, lemongrass, and ginger; peel and cube yams.','Heat coconut oil in large pot over medium heat. Add shallot or onion and stir 2 min. Add ginger, garlic, lemongrass, and chili and cook 3-5 min. Add spices, cook 1-2 min. Add stock, scrape bottom of pot.', 'Bring to a boil, add yam and carrot. Simmer covered until yams are tender, ~15-20 min.', 'Puree soup, return to stove on medium low, stir in 1/2 cup coconut milk. Add brown sugar, soy/fish sauce, lime juice, and Sriracha.', 'Serve and garnish with cilantro, scallions, coconut milk, lime wedges.'],
+	    'photo': '/static/images/thai-yam-soup.jpg',
+	    'tags': ['Heather', 'Soup', 'Vegetarian'],
+	    'formatted_tags': '',
+	    'source_name':'Gimme Some Oven',
+	    'source': 'https://www.feastingathome.com/thai-yam-soup-w-lemongrass-ginger-and-sorghum-flowers/',
+	 },
+	 {
+	    'name': 'Steaks',
+	    'ingredients': [],
+	    'ingredients_subset': [],
+	    'directions': [''],
+	    'photo': '/static/images/steak.jpg',
+	    'tags': ['Kevin', 'Entree'],
+	    'formatted_tags': '',
+	    'source_name':'',
+	    'source': '',
+	 },
+	 {
+	    'name': 'Chicken Parm',
+	    'ingredients': [],
+	    'ingredients_subset': [],
+	    'directions': [''],
+	    'photo': '/static/images/chicken-parm.jpg',
+	    'tags': ['Kevin', 'Entree'],
+	    'formatted_tags': '',
+	    'source_name':'',
+	    'source': '',
+	 },
+	 {
+	    'name': 'Teriyaki Chicken Bowl',
+	    'ingredients': [],
+	    'ingredients_subset': [],
+	    'directions': [''],
+	    'photo': '/static/images/teriyaki-chicken-bowl.jpg',
+	    'tags': ['Kevin', 'Entree'],
+	    'formatted_tags': '',
+	    'source_name':'',
+	    'source': '',
+	 },
+	 {
+	    'name': 'Roasted Chicken',
+	    'ingredients': [],
+	    'ingredients_subset': [],
+	    'directions': [''],
+	    'photo': '/static/images/roasted-chicken.jpg',
+	    'tags': ['Kevin', 'Entree'],
+	    'formatted_tags': '',
+	    'source_name':'',
+	    'source': '',
+	 },
+	 {
+	    'name': 'Irish Soda Bread',
+	    'ingredients': [],
+	    'ingredients_subset': [],
+	    'directions': [''],
+	    'photo': '/static/images/irish-soda-bread.jpg',
+	    'tags': ['Kevin', 'Entree'],
+	    'formatted_tags': '',
+	    'source_name':'',
+	    'source': '',
+	 },
+	 {
+	    'name': 'Mushroom Risotto',
+	    'ingredients': [],
+	    'ingredients_subset': [],
+	    'directions': [''],
+	    'photo': '/static/images/mushroom-risotto.jpg',
+	    'tags': ['Kevin', 'Entree'],
+	    'formatted_tags': '',
+	    'source_name':'All Recipes',
+	    'source': 'https://www.allrecipes.com/recipe/85389/gourmet-mushroom-risotto/',
+	 },
+	 {
+	    'name': 'Cola Chicken Wings',
+	    'ingredients': [],
+	    'ingredients_subset': [],
+	    'directions': [''],
+	    'photo': '/static/images/cola-chicken-wings.jpg',
+	    'tags': ['Kevin', 'Entree'],
+	    'formatted_tags': '',
+	    'source_name':'',
+	    'source': '',
+	 },
+	 {
+	    'name': 'Pasta',
+	    'ingredients': ['flour', '2-4 eggs', 'olive oil', 'salt'],
+	    'ingredients_subset': [],
+	    'directions': ['Make a crater in the center of a mound of flour.','In the center, add eggs, oil, and salt.','Using a fork, slowly work the wet ingredients into the flour from the inside-out.','Once doughy, knead with hands.','Roll out dough, run through pasta maker to thin and cut, cook for ~5 min.'],
+	    'photo': '/static/images/pasta.jpg',
+	    'tags': ['Kevin', 'Entree'],
+	    'formatted_tags': '',
+	    'source_name':'Gimme Some Oven',
+	    'source': 'https://www.gimmesomeoven.com/homemade-pasta/',
+	 },
+	 {
+	    'name': 'Allepo Dill Pickles',
+	    'ingredients': ['8 persian cucumbers', '1/4 cup dill', '2 1/2 cups distilled whtie vinegar', '1/3 cup sugar', '1 garlic clove', '1 tbsp Aleppo red pepper', '1 tbsp lemon juice', '1 tbsp salt', '1 tsp crushed red pepper flakes', '1 tsp black pepper', 'za\'atar'],
+	    'ingredients_subset': [],
+	    'directions': ['Pack cucumber and dill into large heatproof jar.', 'Bring vinegar, sugar, garlic, Aleppo pepper, lemon juice, salt, red pepper flakes, and black pepper to a boil in medium saucepan, stirring to dissolve sugar.', 'Let cool slightly, pour brine over cucumbers to submerge. Seal jar and chill at least 30 min.', 'Remove cucumbers from brine, lightly shake off extra liquid, sprinkle with za\'atar and salt. Serve.'],
+	    'photo': '/static/images/pickles.jpg',
+	    'tags': ['Heather', 'Small Plate', 'Vegetarian'],
+	    'formatted_tags': '',
+	    'source_name':'Bon Appetit',
+	    'source': 'https://www.bonappetit.com/recipe/quick-aleppo-dill-pickles',
+	 },
+	 {
+	    'name': 'Butternut Squash and Apple Soup',
+	    'ingredients': ['1 medium butternut squash', '1/4 lb unsalted butter', '1/4 tsp cinnamon', '1/4 tsp nutmeg', '1 medium yellow onion', '1 apple, preferably Mac, Granny Smith, or Gala', '1 1/2 cups chicken broth or stock', '2 cups water', '1 1/2 cups apple cider'],
+	    'ingredients_subset': [],
+	    'directions': ['Preheat oven to 425 degrees F.', 'Prep: dice onion and apple. Split squash in half lengthwise and scoop out seeds.', 'Bake squash: melt 1/2 butter, rub on squash, season with salt, pepper, cinnamon, and nutmeg. Place squash skin side up on baking sheet and roast for 45 min. When finished, cool and then scoop out meat and discard skin.', 'Cook: melt remaining butter in large pot, add onion and apple. Season with salt and pepper, cook over medium until soft, add squash.', 'Add stock, water, and cider. Bring to a boil, reduce to low and simmer ~20 min.', 'Puree and serve.'],
+	    'photo': '/static/images/squash-apple-soup.jpg',
+	    'tags': ['Heather', 'Soup', 'Vegetarian'],
+	    'formatted_tags': '',
+	    'source_name':'Boston Chefs',
+	    'source': 'https://www.bostonchefs.com/recipe/brian-dandro-butternut-squash-and-apple-soup/',
+	 },
+	 {
+	    'name': 'Stovetop Mac & Cheese',
+	    'ingredients': ['1 1b elbow macaroni', '12 oz evaporated milk', '2 eggs', '1 tsp hot sauce', '1 tsp ground mustard', '1 lb shredded cheddar cheese', '8 oz cubed American cheese', '1 tbsp cornstarch', '1 stick unsaltd butter'],
+	    'ingredients_subset': [],
+	    'directions': ['Boil water for pasta.','Whisk together evaporated milk, eggs, hot sauce, and mustard in a bowl.', 'In another bowl, toss cheeses with cornstarch.', 'Cook and drain pasta, return to pot on low heat, add butter and stir until melted. Add milk and cheese mixtures, stir until melted.', 'Season with more salt and hot sauce as needed and serve.'],
+	    'photo': '/static/images/stovetop-mac-and-cheese.jpg',
+	    'tags': ['Heather', 'Entree', 'Vegetarian'],
+	    'formatted_tags': '',
+	    'source_name':'Andrew Baber, via Serious Eats',
+	    'source': 'https://www.seriouseats.com/recipes/2015/10/the-food-labs-ultra-gooey-stovetop-mac-cheese.html',
+	 },
+	 {
+	    'name': 'Sarawak Laksa',
+	    'ingredients': ['8 oz rice vermicelli', '16-20 jumbo shrimps', '2 quarts chicken stock', '3/4 cup Sarawak Laksa paste', '2 eggs', '1 tbsp soy sauce', '3/4+ cups coconut milk', '2 cups bean sprouts', '1 large bone-in chicken breast', 'cilantro', 'lime', 'chili peppers', 'optional: sambal belacan'],
+	    'ingredients_subset': [],
+	    'directions': ['Make shrimp stock: cover shrimp shells in water, bring to a boil, simmer 20 min.', 'Cook chicken: boil chicken stock, add chicken, reduce to a simmer and cook 12 min. Turn off heat, cover pot, set aside 12-15 min. When cool enough, shred and set aside chicken meat, discarding bones.', 'Enhance stock: stir laksa paste into stock. Using strainer to hold back shells, add shrimp stock to chicken stock/laksa paste mixture. Cover and simmer on low for 30 min.', 'Make eggs: whisk 2 eggs and soy sauce in a bowl. Heat oil in a pan over medium heat, pour egg mixture in, cook 2 min, flip over and turn off heat. Once cooked, let cool, cut into strips and set aside.', 'Make noodles: place rice vermicelli in a bowl, pour in hot water and let sit for 5 min. Agitate slightly to keep from sticking, drain, toss in small amount of oil and set aside.', 'Finish stock: strain stock though a seive, return to high, add shrimp. After 30 sec, remove shrimp and set aside. Add coconut milk, bring to a boil, remove from heat.','Serve: divide bean sprouts, chicken, shrimp, egg, and vermicelli between 4 bowls. Pour in broth and top with cilantro, lime, chili peppers, and sambal belacan.'],
+	    'photo': '/static/images/sarawak-laksa.jpg',
+	    'tags': ['Heather', 'Entree', 'Asian'],
+	    'formatted_tags': '',
+	    'source_name':'Anthony Bourdain',
+	    'source': 'http://www.passmethedimsum.com/2017/01/15/laksa-recipe-anthony-bourdain/',
+	 },
+	 {
+	    'name': 'Baked Mac and Cheese',
+	    'ingredients': ['1 box elbows', '2 lbs sharp chedder cheese', '2 eggs', '1 cup whole milk', 'butter'],
+	    'ingredients_subset': [],
+	    'directions': ['Preheat oven 350 degrees F. Grease 9x13 pan. Cook noodles. Grate cheese.', 'Mix eggs and milk. Add noodles and 1 1/2 lbs cheese. Add a few butter slices on top.','Bake covered for 40 min.', 'Add remaining cheese and bake 20 more min.'],
+	    'photo': '/static/images/baked-mac-and-cheese.jpg',
+	    'tags': ['Heather', 'Entree', 'Vegetarian'],
+	    'formatted_tags': '',
+	    'source_name':'Katherine Lalla',
+	    'source': '/static/sources/baked-mac-and-cheese.jpg',
+	 },
+	 {
+	    'name': 'Gumbo',
+	    'ingredients': ['1 cup vegetable oil', '1 cup flour', '1 lb andouille sausage', '1 bag frozen diced okra', '1 large onion', '1 large green bell pepper', '2 tbsp garlic', '1 large rotisserie chicken', '1 can rotel diced tomatoes with green chilies', '6 cups chicken broth', '8 oz clam juice', '3 dried bay leaves', 'Tabasco', 'Worcestershire', '1 lb shrimp', '1 pint shucked oysters', 'green onions', 'parsley'],
+	    'ingredients_subset': ['white rice', 'warm bread', 'seasonal salad'],
+	    'directions': ['Begin preparations at least 1 day prior to serving.', 'Prep: slice susage into 1/2 circles. Chop onion, pepper. Mince garlic. Remove and shred meat from chicken.', 'Start stock: in large stock pan, heat chicken broth, clam juice, and 2 dashes of Tabasco over low heat on back burner. Should warm but not boil.', 'Cook sausage and okra: cook sausage in a cast iron skillet, remove and set aside. Add frozen okra, cook in sausage juices until browned, set aside.','Make roux: microwave oil for 20-30 sec to start warming. Add to dutch oven over low-medium (2-3) heat. Whisk in flour, constantly stirring and scraping the bottom with the flat edge of a wooden spatula for 45 min. If you start to get brown bits, it\'s burning - start over.','Roux should have turned from light and cloudy to copper, increase heat slightly (3-4) and stir 30 more min until caramel color and totally smooth.','Remove roux from heat and stir 10 more min. Slowly ladle in broth, still stirring constantly, for 30 min. Return pot to burner over low-medium heat (3-4) and keep stirring.', 'Saute veggies: add onions, bell pepper, and garlic to warm broth pan and saute ~10-15 min, while still stirring roux.', 'Add everything to roux: slowly add sauted veggies to roux over the course of 10-15 min, still stirring constantly. Add rotel, bay leaves, 2 large dashes Worcestershire sauce, still stirring. Slowly add cooked sausage, chicken, and okra and stir for 30 more min.', 'Wrap up day 1: stir for an additional 15 min over heat if needed. Remove from heat and stir 10-15 min to start to cool off, then let rest for 30-45 min and refrigerate overnight, ideally for 24 hours.','Start cooking rice. Remove gumbo from fridge and place on low-medium heat (3-4) and stir every 3-5 min. Once it\'s hot (might take 30-45 min), add shrimp and stir until pink, ~5-10 min.','Cook oysters: heat oil over high heat in cast iron skillet and add oysters 3-5 at a time for 20-30 seconds to heat and slightly brown.', 'Serve with 1/4 - 1/2 cup rice per bowl, top generously with gumbo and 2-3 oysters, garnish with scallions and parsley. Serve with seasonal salad and warm bread.' ],
+	    'photo': '/static/images/gumbo.jpg',
+	    'tags': ['Heather', 'Entree'],
+	    'formatted_tags': '',
+	    'source_name':'Katherine Lalla',
+	    'source': '/static/sources/gumbo.pdf',
+	 },
+	 {
+	    'name': 'Moroccan Lentil & Vegetable Soup',
+	    'ingredients': ['1 tbsp olive oil', '1 cup onion', '4 cloves garlic', '1/2 cup dried lentils', '1 1/2 tsp corriander', '1 1/2 tsp cumin', '1/2 tsp cinnamon', '1/2 tsp black pepper', '32 oz vegetable broth', '1/2 cup celery', '1/2 cup sun-dried tomatoes (not in oil)', '1 yellow squash', '1/2 cup green bell pepper', '1 cup plum tomatoes', '1/2 cup fresh Italian parsley', '1/4 cup fresh cilantro or basil'],
+	    'ingredients_subset': [],
+	    'directions': ['Prep: chop onion, celery, sun-dried, tomatoes, squash, green bell pepper, plum tomatoes, parsley and cilatnro/basil. Mince garlic. Rinse and sort lentils.', 'Heat oil in medium sauce panover medium-high heat. Add onion and garlic, cook ~4 min. Stir in coriander, cumin, cinnamon, and black pepper, cook 2 min. Add broth, celery, and sun-dried tomatoes. Bring to a boil, reduce heat to medium-low, cover and simmer 25 min.', 'Stir in squah and bell pepper, cover and cook until lentils tender, ~10 min.', 'Serve and top with tomatoes, parsley, and cilantro/basil.'],
+	    'photo': '/static/images/moroccan-lentil-soup.jpg',
+	    'tags': ['Heather', 'Soup', 'Vegetarian'],
+	    'formatted_tags': '',
+	    'source_name':'Diabetes Self Management Magazine',
+	    'source': '/static/sources/mediterranean.jpg',
+	 },
+	 {
+	    'name': 'Hummus',
+	    'ingredients': ['15 oz chickpeas', '2 tbsp tahini', '2 tbsp lemon juice', '1 clove garlic', '3/4 tsp salt'],
+	    'ingredients_subset': [],
+	    'directions': ['Prep: rinse and drain chickpeas, mince garlic.', 'Combine chickpeas, tahini, lemon juice, garlic, and salt in food processor or blender, process until smooth.', 'Mix in olive oil and serve.'],
+	    'photo': '/static/images/hummus.jpg',
+	    'tags': ['Heather', 'Small Plate', 'Vegetarian'],
+	    'formatted_tags': '',
+	    'source_name':'Diabetes Self Management Magazine',
+	    'source': '/static/sources/mediterranean.jpg',
+	 },
+	 {
+	    'name': 'Greek Side Salad',
+	    'ingredients': ['1 can cannellini beans', '1 pkg grape tomatoes', '1 cucumber', '2 tbsp red onion', '1 bell pepper', '1 pkg crumbled feta'],
+	    'ingredients_subset': ['olive oil', 'balsamic vinegar', 'salt', 'pepper'],
+	    'directions': ['Prep: halve tomatoes; chop cucumber, green pepper, and onion; drain and rinse beans.','Mix salad ingredients together, add dressing, serve.'],
+	    'photo': '/static/images/greek-side-salad.jpg',
+	    'tags': ['Heather', 'Small Plate', 'Salad', 'Vegetarian'],
+	    'formatted_tags': '',
+	    'source_name':'Diabetes Self Management Magazine',
+	    'source': '/static/sources/mediterranean.jpg',
+	 },
+	
+	
 
+	
 
 ]
 
