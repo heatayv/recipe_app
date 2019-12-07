@@ -1,7 +1,6 @@
-# import requests
-# import gc
 from flask import Flask, render_template
 app = Flask(__name__)
+
 
 recipes = [
     {
@@ -82,7 +81,7 @@ recipes = [
         'source': 'https://www.bonappetit.com/recipe/tomato-toast-with-chives-and-sesame-seeds'
     },
     {
-        'name': 'za\'atarChicken',
+        'name': 'Za\'atar Chicken',
         'ingredients': [],
         'ingredients_subset': [],
         'directions': '',
@@ -96,7 +95,7 @@ recipes = [
         'name': 'Sesame Ginger Salmon',
         'ingredients': ['1/2 lb salmon per person', 'asparagus', 'rice pilaf', 'sesame seeds (topper)', 'green onions (topper)'],
         'ingredients_subset': ['1/4 cup olive oil', '2 tablespoons soy sauce', '2 tablespoons rice vinegar', '2 tablespoons sesame oil', '2 tablespoons brown sugar', '2 cloves garlic', '1 tablespoon grated fresh ginger', '2 tablespoons honey', '1/2 lemon juice', '1/2 teaspoon Sriracha (optional)'],
-        'directions': ['Preheat oven to 450°F.','Make the rice.', 'Make the marinade and let salmon marinate for at least 30 min.', 'Bake salmon for 12-15 min.', 'Cook asparagus: heat olive oil over medium-high heat, add asparagus, salt, and pepper and cook until done.', 'Serve, topping with sesame seeds and green onions.'],
+        'directions': ['Preheat oven to 450 degrees F.','Make the rice.', 'Make the marinade and let salmon marinate for at least 30 min.', 'Bake salmon for 12-15 min.', 'Cook asparagus: heat olive oil over medium-high heat, add asparagus, salt, and pepper and cook until done.', 'Serve, topping with sesame seeds and green onions.'],
         'photo': '/static/images/sesame-ginger-salmon.jpg',
         'tags': ['Heather', 'Entree', 'Favorite', 'Easy'],
         'formatted_tags': '',
@@ -105,7 +104,7 @@ recipes = [
     },
     {
         'name': 'Elote Bowl',
-        'ingredients': ['3/4 cup red quinoa', '1 can chickpeas', '2 ears corn', '1 jalapeño','2 radishes', 'fresh cilantro', '1 lime', '2 tbsp yogurt', '2 tbsp mayo', '1/4 tsp cayenne pepper', 'parmesan cheese'],
+        'ingredients': ['3/4 cup red quinoa', '1 can chickpeas', '2 ears corn', '1 jalapeno','2 radishes', 'fresh cilantro', '1 lime', '2 tbsp yogurt', '2 tbsp mayo', '1/4 tsp cayenne pepper', 'parmesan cheese'],
         'ingredients_subset': [],
         'directions': ['Cook the quinoa with 1 1/4 cups water, simmer for 12-15 min.', 'Prep the vegetables: slice radishes, cut off corn kernels, mince jalapeño, chop cilantro.', 'Make elote sauce: mix yogurt, mayo, 1/2 lime juice, salt.', 'Crisp chickpeas and corn: heat oil over high heat, cook chickpeas and corn ~4-6 min until crisp & lightly charred in spots. If this doesn\'t work, crisp separately.', 'Serve in 2 bowls, top with sauce, radishes, cilantro, parmesan, remaining lime juice, and cayenne pepper.'],
         'photo': '/static/images/elote-bowl.jpg',
