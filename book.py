@@ -1171,11 +1171,11 @@ recipes = [
      },
      {
         'name': 'Cheoreg',
-        'ingredients': [''],
+        'ingredients': ['10 cups flour', '1 1/2 sticks margarine (Fleischmann\'s)', '1 stick butter', '1/2 tsp mahleb', '1 tsp black caraway seeds', '1 pkg yeast', '2 cups milk', '1 1/2 cups sugar', '7 eggs', '1/2 tsp salt', 'sesame seeds'],
         'ingredients_subset': [],
-        'directions': [''],
+        'directions': ['Melt butter and margerine, cool, add mahleb and caraway. Pour into flour.', 'Dissolve yeast in 1/4 cup lukewarm water and add to flour mixture.', 'Melt milk and sugar together, cool to lukewarm temperatuer then add to flour mixture. Knead with hands.', 'In a bowl, beat together 6 eggs with salt. Add to flour mixture.', 'Knead until dough is elastic. Put 2 tbsp butter on hands and spread over dough. Cover with damp towel and let rise 8 hours.', 'Preheat oven to 400 degrees F. Roll and stretch dough into braids, adding flour if needed. Brush with 1 beaten egg. Sprinkle with sesame seeds. Bake 10-15 min, reduce heat to 350 degrees F, bake 5 more min.'],
         'photo': '/static/images/choreg.jpg',
-        'tags': ['Heather', 'Small Plate', 'Armenian', 'NOT DONE'],
+        'tags': ['Heather', 'Small Plate', 'Armenian'],
         'formatted_tags': '',
         'source_name':'Rose Baboian\'s Cook Book, pg 64',
         'source': '/static/sources/choreg.jpg',
@@ -1614,11 +1614,11 @@ recipes = [
 
 ]
 
-def format_tags(): 
-    for i in range(len(recipes)):
-        recipes[i]['formatted_tags'] = " ".join(recipes[i]['tags'])
+# def format_tags(): 
+#     for i in range(len(recipes)):
+#         recipes[i]['formatted_tags'] = " ".join(recipes[i]['tags'])
 
-format_tags()
+# format_tags()
 
 tag_list = []
 all_tags = set(tag_list)
