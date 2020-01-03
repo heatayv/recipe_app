@@ -11,7 +11,7 @@
 
 <body>
 
-  <div id=myBtnContainer><!-- 
+  <div id=myBtnContainer>
     <button class="btn active" onclick="filterSelection('all')"> Show all</button>
     <button class="btn" onclick="filterSelection('Favorite')"> Favorite</button> 
     <button class="btn" onclick="filterSelection('Easy')"> Easy</button> 
@@ -25,14 +25,14 @@
     <button class="btn" onclick="filterSelection('Asian')">Asian</button>
     <button class="btn" onclick="filterSelection('Armenian')">Armenian</button>
     <button class="btn" onclick="filterSelection('Drink')">Drinks</button>
-    <button class="btn" onclick="filterSelection('NOT DONE')">NOT DONE</button>
-  </div> -->
+    <button class="btn" onclick="filterSelection('Baking')">Baking</button>
+  </div>
 
   <div id="home_recipes_container">
     <ul class="home_recipes">
         {% for recipe in recipes %}
-        <!-- <li class="filterDiv {{recipe['formatted_tags']}}"> <a href="/{{recipe['name']}}"><img src="{{ recipe['photo'] }}"> <br /> {{ recipe['name'] }} </a></li> -->
-        <li class="filterDiv"> <a href="/{{recipe['name']}}"><img src="{{ recipe['photo'] }}"> <br /> {{ recipe['name'] }} </a></li>
+        <li class="filterDiv {{recipe['formatted_tags']}}"> <a href="/{{recipe['name']}}"><img src="{{ recipe['photo'] }}"> <br /> {{ recipe['name'] }} </a></li>
+       <!--  <li class="filterDiv"> <a href="/{{recipe['name']}}"><img src="{{ recipe['photo'] }}"> <br /> {{ recipe['name'] }} </a></li> -->
 
         {% endfor %}
     </ul>

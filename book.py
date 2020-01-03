@@ -1598,27 +1598,72 @@ recipes = [
         'source_name':'Laurel',
         'source': ''
     },
+    {
+        'name': 'Char Siu Pork Bao',
+        'ingredients': ['BBQ PORK','3 lbs boneless pork shoulder/butt', '1/4 cup sugar', '2 tsp salt', '1/2 tsp five spice powder', '1/4 tsp white pepper', '1/2 tsp sesame oil', '1 tbsp Shaoxing rice wine or mirin', '1 tbsp soy sauce', '1 tbsp hoisin sauce', '2 tsp molasses', '1/8 tsp red food coloring', '3 cloves garlic', '2 tbsp honey', '1 tbsp hot water', 'BAO FILLING', '1 tbsp oil', '1/3 cup shallot or red onion', '1 tbsp sugar', '1 tbsp light soy sauce', '2 tsp dark soy sauce', '1 1/2 tbsp oyster sauce', '2 tsp sesame oil', '1/2 cup chicken stock', '2 tbsp flour'],
+        'ingredients_subset': ['DOUGH', '1 tsp active dry yeast', '3/4 cup warm water', '2 cups flour', '1 cup cornstarch', '5 tbsp sugar', '1/4 cup canola oil', '2 1/2 tsp baking powder'],
+        'directions': ['Marinate pork: cut pork into long strips or chunks about 3 inches thick. Make the marinade: finely chop garlic. Combine sugar, salt, five spice powder, white pepper, sesame oil, wine, soy sauce, hoisin sauce, molasses, food coloring, and garlic. Set aside 2 tbsp. Rub pork with rest of marinade, cover and refridgerate for 2-8 hours or overnight.', 'Roast pork: preheat oven to 500 degrees F or highest temperature. Remove pork from fridge to bring to room temperature. Line a sheet pan with foil and place metal rack on top. Pour 1 1/2 cups water into the pan below the rack to safely handle drippings. Roast 25 min. Flip the pork and rotate pan 180 degrees, then roast 15 more min. Combine reserved marinade with honey and hot water, baste both sides of pork, roast 10 more min. Let rest 10 min before dicing into small pieces.', 'Make dough: dissolve yeast in warm water. Sift together flour and cornstarch, add to mixture. Add sugar and oil. Knead until a smooth ball is formed, adding a little water as needed. Cover with a damp cloth and let rest for 2 hours. Add in baking powder (and water if needed), knead until the dough is smooth ball again. Cover with damp cloth and let rest another 15 min.', 'Make filling: finely chop shallot or red onion. Mix together sugar, soy sauces, oyster sauce, and sesame oil. Heat oil in large pan over medium high heat. Add onion and stir-fry for 1 min. Turn heat down to medium-low and add the sauce mixture. Stir and cook until starts to bubble, then add chicken stock and flour. Cook a couple min until thickened, remove from heat, stir in pork.', 'Make the bao: place a big pot of water over high heat. roll the dough into a long tube and divide into ~15 pieces. Press and roll each piece into a circle, add filling to middle, and pleat the buns until they\'re closed on top. Place each bao on a greased piece of parchment paper in the bamboo steamer. Once the bamboo steamer is full and the pot of water is steaming, place the bamboo steamer on top the pot and steam for 12 min per batch.'],   
+        'photo': '/static/images/bao.jpg',
+        'tags': ['Heather', 'Asian'],
+        'formatted_tags': '',
+        'source_name':'The Woks of Life',
+        'source': 'https://thewoksoflife.com/steamed-bbq-pork-buns-char-siu-bao/'
+    },
+    {
+        'name': 'Chicken and Sweet Potato Peanut Stew',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/chicken-sweet-potato-peanut-stew.jpg',
+        'tags': ['Heather', 'Soup'],
+        'formatted_tags': '',
+        'source_name':'Laurel, Betty Crocker',
+        'source': 'https://www.bettycrocker.com/recipes/chicken-and-sweet-potato-peanut-stew/bdc23851-8d67-43d9-97b1-8a9b6bfb4f8a',
+    },
+    {
+        'name': 'Dan Dan Noodles',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/dan-dan-noodles.jpg',
+        'tags': ['Heather', 'Asian'],
+        'formatted_tags': '',
+        'source_name':'The Woks of Life',
+        'source': 'https://thewoksoflife.com/dan-dan-noodles/',
+     },
+     {
+        'name': 'Salad Vinaigrettes',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': ['Tahini (Fat) + Lemon (Acid) + Maple Syrup (Flavor Enhancer)', 'Yogurt (Fat) + Avocado (Fat) + Mustard + Herbs (Flavor Enhancers)', 'Sesame Oil (Fat) + Lime (Acid) + Miso Paste + Chili + Lime + Sesame Seeds (Flavor Enhancers)'],
+        'photo': '/static/images/vinaigrettes.jpg',
+        'tags': ['Heather', 'Salad'],
+        'formatted_tags': '',
+        'source_name':'Boston Chefs',
+        'source': 'https://www.bostonchefs.com/news/2019/12/16/little-leaf-farms-salad-pro-tips/',
+     },
+
      
-     # {
-     #    'name': 'Placeholder',
-     #    'ingredients': [''],
-     #    'ingredients_subset': [],
-     #    'directions': [''],
-     #    'photo': '/static/images/placeholder.jpg',
-     #    'tags': ['Heather', ],
-     #    'formatted_tags': '',
-     #    'source_name':'',
-     #    'source': '',
-     # },
+    # {
+    #     'name': 'Placeholder',
+    #     'ingredients': [''],
+    #     'ingredients_subset': [],
+    #     'directions': [''],
+    #     'photo': '/static/images/placeholder.jpg',
+    #     'tags': ['Heather', ],
+    #     'formatted_tags': '',
+    #     'source_name':'',
+    #     'source': 'https://pinchofyum.com/, https://www.halfbakedharvest.com/',
+    #  },
 	
 
 ]
 
-# def format_tags(): 
-#     for i in range(len(recipes)):
-#         recipes[i]['formatted_tags'] = " ".join(recipes[i]['tags'])
+def format_tags(): 
+    for i in range(len(recipes)):
+        recipes[i]['formatted_tags'] = " ".join(recipes[i]['tags'])
 
-# format_tags()
+format_tags()
 
 tag_list = []
 all_tags = set(tag_list)
