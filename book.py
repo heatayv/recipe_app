@@ -1642,6 +1642,17 @@ recipes = [
         'source_name':'Boston Chefs',
         'source': 'https://www.bostonchefs.com/news/2019/12/16/little-leaf-farms-salad-pro-tips/',
      },
+     {
+        'name': 'Frosting',
+        'ingredients': ['3/4 cup powdered sugar', '1 tbsp butter', '1 tbsp milk', '1/2 tsp vanilla', '1/4 tsp lemon juice'],
+        'ingredients_subset': [],
+        'directions': ['Melt butter. Sift powdered sugar. Combine all ingredients, beat until smooth.'],
+        'photo': '/static/images/frosting.jpg',
+        'tags': ['Heather', 'Baking'],
+        'formatted_tags': '',
+        'source_name':'Anne Clark Cookie Cutters',
+        'source': '',
+     },
 
      
     # {
