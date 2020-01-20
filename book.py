@@ -1,3 +1,5 @@
+import csv
+
 from flask import Flask, render_template
 app = Flask(__name__)
 
@@ -1669,6 +1671,22 @@ recipes = [
 	
 
 ]
+
+headers = ["name", "ingredients", "ingredients_subset", "directions", "photo", "tags", "formatted_tags", "source_name", "source"]
+
+with open('heather_ingredients.csv', 'w', newline='') as heather_ingredients:
+    global performance_review
+    x = csv.DictWriter(heather_ingredients, fieldnames = headers)
+    x.writeheader()
+    # for i in range(len(recipes)): 
+    #     if employees[i]["last_name"] == "Lumbergh" or employees[i]["job_title"] == "Consultant": 
+    #       employees[i]["performance_review"] = "poor"
+    #     else: 
+    #       employees[i]["performance_review"] = "excellent"
+    #     employees[i]["finished_review"] = "yes"
+    for recipe in recipes: 
+        x.writerow(recipe)
+
 
 def format_tags(): 
     for i in range(len(recipes)):
