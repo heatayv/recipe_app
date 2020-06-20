@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!-- <form>
+        <input type="text" name="x" value="{{ x }}" autofocus="autofocus" />
+        <input type="submit" value="Submit" />
+    </form> -->
+  <div>
+   <ul>
+      <li>{{x}}</li>
+    </ul>
+    <ul>
+      {% for recipe in x.recipes %}
+      <li>{{ recipe['name'] }}</li>
+      {% endfor %}
+    </ul>
+    
+    <ul>
+      <li>hello</li>
+    </ul>
+    <ul>
+      <li>{{x}}</li>
+    </ul>
+    <ul>
+      <li>{{y}}</li>
+    </ul>
+    <ul>
+      <li>{{z}}</li>
+    </ul>
+    <ul>
+      {% for account in accounts %}
+      <li>{{ account.owner }}</li>
+      {% endfor %}
+    </ul>
+    <ul>
+      {% for recipe in x.recipes %}
+      <li>{{ recipe['name'] }}</li>
+      {% endfor %}
+    </ul>
+    <ul>
+      {% for recipe in y.recipes %}
+      <li>{{ recipe['name'] }}</li>
+      {% endfor %}
+    </ul>
+    <ul>
+      {% for recipe in z.recipes %}
+      <li>{{ recipe['name'] }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</body>
+</html>
+
+
+

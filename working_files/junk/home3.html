@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <form>
+      <input type="text" name="query" value="{{ query }}" autofocus="autofocus" />
+      <input type="submit" value="Submit" />
+  </form>
+  <ul>
+    <li>{{query}}</li>
+  </ul>
+  <ul>
+      {% for recipe in query.recipes %}
+      <li>{{ recipe['name'] }}</li>
+      {% endfor %}
+  </ul>
+   
+</body>
+</html>
+
+
+

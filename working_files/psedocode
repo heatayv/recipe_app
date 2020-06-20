@@ -1,0 +1,18 @@
+General
+- Write everything to database, and have screens populate off that
+- Add recipe ID to data structure
+
+Home screen: 
+- Take in object (account)
+- Return recipe image, recipe name, and recipe ID
+
+Recipe screen: 
+- Take in recipe ID
+- Return everything about the recipe
+
+Recipe edit screen: 
+- Take in recipe ID
+- Return everything about the recipe
+- Take in everything about the recipe
+- Write to database
+- Return new values
