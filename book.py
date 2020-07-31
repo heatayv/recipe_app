@@ -86,7 +86,7 @@ recipes = [
         'source': 'https://www.bonappetit.com/recipe/tomato-toast-with-chives-and-sesame-seeds'
     },
     {
-        'name': 'Spicy Baked Pasta With Cheddar and Broccoli',
+        'name': 'Baked Pasta with Cheddar & Broccoli',
         'ingredients': [],
         'ingredients_subset': [],
         'directions': '',
@@ -124,7 +124,7 @@ recipes = [
         'ingredients_subset': [],
         'directions': '',
         'photo': '/static/images/pulled-pork.jpg',
-        'tags': ['Kevin', 'Bon Appetit', 'Entree'],
+        'tags': ['Kevin', 'Entree'],
         'formatted_tags': '',
         'source_name':'Paula Deen Food Network',
         'source': 'https://www.foodnetwork.com/recipes/paula-deen/bbq-pork-sandwich-recipe-1949483'
@@ -174,15 +174,15 @@ recipes = [
         'source': ''
     },
     {
-        'name': 'Cold Beef Soba Noodle Soup',
+        'name': 'Cold Soba Noodle Soup',
         'ingredients': [],
         'ingredients_subset': [],
-        'directions': '',
+        'directions': 'Sub mushrooms for beef.',
         'photo': '/static/images/beef-soba.jpg',
         'tags': ['Kevin', 'Entree', 'Healthy'],
         'formatted_tags': '',
-        'source_name':'',
-        'source': ''
+        'source_name':'Chatelaine',
+        'source': 'https://www.chatelaine.com/recipe/world-cuisine-2/japanese-beef-and-soba-bowl/'
     },
     {
         'name': 'Chickpea Pasta and Tomato Sauce',
@@ -194,6 +194,39 @@ recipes = [
         'formatted_tags': '',
         'source_name':'',
         'source': ''
+    },
+    {
+        'name': 'Gochujang Steak',
+        'ingredients': [],
+        'ingredients_subset': [],
+        'directions': '',
+        'photo': '/static/images/gochujang-steak.jpg',
+        'tags': ['Kevin', 'Entree', 'Healthy'],
+        'formatted_tags': '',
+        'source_name':'Bon Appetit',
+        'source': 'https://www.bonappetit.com/recipe/gochujang-marinated-skirt-steak'
+    },
+    {
+        'name': 'Grilled Swordfish',
+        'ingredients': [],
+        'ingredients_subset': [],
+        'directions': '',
+        'photo': '/static/images/grilled-swordfish.jpg',
+        'tags': ['Kevin', 'Entree', 'Healthy'],
+        'formatted_tags': '',
+        'source_name':'Bon Appetit',
+        'source': 'https://www.bonappetit.com/recipe/grilled-swordfish-with-tomatoes-and-oregano'
+    },
+    {
+        'name': 'Citrus Shrimp Lettuce Cups',
+        'ingredients': [],
+        'ingredients_subset': [],
+        'directions': '',
+        'photo': '/static/images/citrus-shrimp.jpg',
+        'tags': ['Kevin', 'Entree', 'Healthy'],
+        'formatted_tags': '',
+        'source_name':'Bon Appetit',
+        'source': 'https://www.bonappetit.com/recipe/grilled-citrus-shrimp-lettuce-cups'
     },
     {
         'name': 'Sesame Ginger Salmon',
@@ -373,9 +406,9 @@ recipes = [
     },
     {
         'name': 'Eggplant Flatbreads',
-        'ingredients': ['2 eggplants', '1/2 cup bulgur', '1 celery stalk', '4 oz heirloom cherry tomoatoes', '1 shallot', 'fresh parsley', '2 tsp za\'atar', '2 tbsp + 2 tsp champagne or white vinegar', '3 tbsp tahini', '2 tbsp mango chutney', '1 package of pitas'],
+        'ingredients': ['2 eggplants', '1/2 cup bulgur', '1 celery stalk', '4 oz heirloom cherry tomoatoes', '1 shallot', 'fresh parsley', '2 tsp za\'atar', '2 tbsp + 2 tsp white wine vinegar', '3 tbsp tahini', '2 tbsp mango chutney', '1 package of pitas'],
         'ingredients_subset': [],
-        'directions': ['Cook bulgur (boil 1 1/4 cups water: 3/4 cups bulgur, cover and sit 18-20 min).', 'Prepare produce (dice celery, quarter tomoatoes, mince shallot, roughly chop parsley).', 'Broil eggplant (set oven to broil on high, cut eggplant into 1 inch thick rounds, place on baking sheet, add oil, za\'atar, and salt. Broil 5-8 min on each side).', 'Toss celery tabbouleh (add celery, tomatoes, shallot, and parsley to finished bulgar. Add 2 tbsp vinegar, 2 tbsp olive oil, salt, and pepper).', 'Make the mango tahini amba (combine and stir remaining vinegar, tahini, mango chutney, and salt).' ,'Warm pitas in foil in oven, 2-4 min.', 'Serve with everything in the pita, with any extra tabbouleh and mango tahini amba on the side.'],
+        'directions': ['Cook bulgur: boil with 1 cup water, cover and simmer ~10 min or until done.', 'Prepare produce (dice celery, quarter tomoatoes, mince shallot, roughly chop parsley).', 'Broil eggplant (set oven to broil on high, cut eggplant into 1 inch thick rounds, place on baking sheet, add oil, za\'atar, and salt. Broil 5-8 min on each side).', 'Toss celery tabbouleh (add celery, tomatoes, shallot, and parsley to finished bulgar. Add 2 tbsp vinegar, 2 tbsp olive oil, salt, and pepper).', 'Make the mango tahini amba (combine and stir remaining vinegar, tahini, mango chutney, and salt).' ,'Warm pitas in foil in oven, 2-4 min.', 'Serve with everything in the pita, with any extra tabbouleh and mango tahini amba on the side.'],
         'photo': '/static/images/eggplant-flatbreads.jpg',
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Healthy'],
         'formatted_tags': '',
@@ -1213,7 +1246,7 @@ recipes = [
         'ingredients_subset': [],
         'directions': ['Prep: chop onion, mix ingredients together, shape into kebabs. Grill or broil for 15 min, flipping halfway through.', 'Serve witih pita and jajek or greek salad.'],
         'photo': '/static/images/losh-kebab.jpg',
-        'tags': ['Heather','Entree', 'Armenian', 'Easy'],
+        'tags': ['Heather','Entree', 'Healthy', 'Armenian', 'Easy'],
         'formatted_tags': '',
         'source_name':'Rose Baboian\'s Cook Book',
         'source': '/static/sources/losh-kebab.jpg',
@@ -1961,10 +1994,32 @@ recipes = [
         'ingredients_subset': [],
         'directions': ['Preheat oven to 400 degrees F.', 'Prep: shred chicken, chop onion, mince garlic.', 'Heat oil in skillet, saute onion and garlic. Add chicken, a few dashes of taco seasoning, and enough enchilada sauce to to coat the chicken. Mix until heated through.', 'Coat the bottom of a 9x12 pan with enchilada sauce.', 'Put 1/4 cup of chicken mix in each toritilla, and roll. Place in pan.', 'Top with remaining sauce and sprinkle with cheese and scallions. Cover and bake 20-25 min.', 'Tip: for "skinny" use low-card tortillas and reduced fat cheese.'],
         'photo': '/static/images/skinny-enchiladas.jpg',
-        'tags': ['Heather', 'Vegetarian', 'Entree', 'Healthy'],
+        'tags': ['Heather', 'Vegetarian', 'Entree', 'Healthy', 'Mexican'],
         'formatted_tags': '',
         'source_name':'Katherine',
         'source': '',
+     },
+     {
+        'name': 'Mango Salsa',
+        'ingredients': ['1-2 mangos', '1 red bell pepper', '1/2 cup red onion', '1/4 cup cilantro', '1 jalapeño', '1 lime', '1/4 tsp salt'],
+        'ingredients_subset': [],
+        'directions': ['Chop everything, combine, and serve.'],
+        'photo': '/static/images/mango-salsa.jpg',
+        'tags': ['Heather', 'Healthy'],
+        'formatted_tags': '',
+        'source_name':'Cookie + Kate',
+        'source': 'https://cookieandkate.com/fresh-mango-salsa-recipe/',
+     },
+     {
+        'name': 'Summer Nectarine Salad',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/nectarine-salad.jpg',
+        'tags': ['Heather', 'Healthy', 'Salad' ],
+        'formatted_tags': '',
+        'source_name':'Honestly Yum',
+        'source': 'https://honestlyyum.com/11034/summer-nectarine-salad/',
      },
 
      
