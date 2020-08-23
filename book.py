@@ -270,7 +270,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Bowl', 'Vegetarian', 'Mexican'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/elote-bowl.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/elote-bowl-with-lime-chickpeas-and-red-quinoa'
     },
     {
         'name': 'Take-out Style Noodles',
@@ -281,7 +281,7 @@ recipes = [
         'tags': ['Heather', 'Entree', 'Vegetarian', 'Asian', 'Favorite'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/take-out-style-noodles.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/takeout-style-noodles-with-asparagus-sesame-ginger-sauce'
     },
     {
         'name': 'Canh Chua Vietnamese Soup',
@@ -292,7 +292,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Soup', 'Vegetarian', 'Asian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/canh-chua-vietnamese-soup.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/canh-chua-vietnamese-soup-with-fresh-pineapple-and-crispy-shallots'
     },
     {
         'name': 'Fiesta Enchilada Skillet',
@@ -303,7 +303,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Mexican'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/fiesta-enchilada-skillet.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/fiesta-enchilada-skillet-with-mole-black-beans-avocado'
     },
     {
         'name': 'Thai Vegetable Stir-fry',
@@ -314,7 +314,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Asian', 'Healthy'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/thai-vegetable-stir-fry.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/thai-vegetable-stir-fry-with-peaches-seeded-cashew-rice'
     },
     {
         'name': 'Japanese Yam Sushi Bowl',
@@ -325,7 +325,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Bowl', 'Vegetarian', 'Asian', 'Healthy'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/japanese-yam-sushi-bowl.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/japanese-yam-sushi-bowl-with-sesame-spinach-citrus-aioli'
     },
     {
         'name': 'Vegan Mac and Cheese',
@@ -336,7 +336,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/vegan-mac-and-cheese.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/vegan-mac-and-cheese-with-buttery-breadcrumbs-roasted-broccoli'
     },
     {
         'name': 'Bahn Mi Burgers',
@@ -347,18 +347,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Asian', 'Healthy'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/bahn-mi-burgers.jpg'
-    },
-    {
-        'name': 'Coconut Curry Udon Noodles',
-        'ingredients': ['6 oz broccoli florets', '2 carrots', '1 shallot', '2 cloves garlic', '1 stalk lemongrass', '2 tbsp green curry paste', '1 can coconut milk', 'fresh cilantro', '1 lime', '6 oz udon noodles', '1/3 cup toasted coconut chips'],
-        'ingredients_subset': [],
-        'directions': ['Boil water for noodles.', 'Prepare vegetables: chop broccoli florets into bite-sized peices, thinly slice carrot diagonally, thinly slice shallot, mince garlice, cut lemongrass into pieces 2-3 inches long and press down on them.', 'Cook: heat oil over high heat, add broccoli and carrots and cook for 2-3 min. Reduce heat to low, add oil, shallot, garlic, and green curry paste and cook 1-2 min.', 'Simmer: add lemongrass, coconut milk, and 1/2 cup water. Bring to a boil then reduce and simmer for 2-3 min.', 'Cook udon noodles in the water 3-5 min, drain and rinse with cold water. Add to skillet with 1/2 cilantro and 1/2 lime.', 'Remove and discard lemongrass, serve and garnish with 1/2 cilantro, coconut chips, and lime wedges.'], 
-        'photo': '/static/images/coconut-curry-udon-noodles.jpg',
-        'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Asian', 'Healthy'],
-        'formatted_tags': '',
-        'source_name':'Purple Carrot',
-        'source': '/static/sources/coconut-curry-udon-noodles.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/banh-mi-burgers-with-cilantro-broccoli-slaw-sriracha-mayo'
     },
     {
         'name': 'Butternut Squash Gnocchi',
@@ -369,7 +358,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/butternut-squash-gnocchi.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/butternut-squash-gnocchi-with-cranberries-herb-butter'
     },
     {
         'name': 'Autumn Bibimbap',
@@ -380,7 +369,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Asian', 'Healthy'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/autumn-bibimbap.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/autumn-bibimbap-with-gochujang-brussels-sprouts-sesame-aioli'
     },
     {
         'name': 'Tofu Halloumi',
@@ -391,7 +380,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Healthy'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/tofu-halloumi.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/tofu-halloumi-with-watermelon-mint-salad-and-charred-zucchini'
     },
     {
         'name': 'Buffalo Cauliflower Salad',
@@ -402,7 +391,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Salad', 'Vegetarian', 'Mediterranean', 'Healthy'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/buffalo-cauliflower-salad.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/buffalo-cauliflower-salad-with-farro-ranch-dressing'
     },
     {
         'name': 'Eggplant Flatbreads',
@@ -413,7 +402,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Healthy'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/eggplant-flatbreads.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/eggplant-flatbread-with-celery-tabbouleh-mango-tahini-ambag'
     },
     {
         'name': 'Sweet Potato Black Bean Tacos',
@@ -424,18 +413,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Mexican', 'Healthy'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/sweet-potato-black-bean-tacos.jpg'
-    },
-    {
-        'name': 'Jeweled Biryani',
-        'ingredients': ['1/2 cup green lentils', '1/2 cup jasmine rice', '6 oz butternut squash', '2 tsp curry powder', '1 cucumber', '2 tsp lemon juice', '2 scallions', 'fresh mint', '1.5 oz dried apricots', '2 tsp coconut oil', '1/4 cup golden raisins', '1/4 cup cashews'],
-        'ingredients_subset': [],
-        'directions': ['Preheat oven to 425°F.', 'Cook lentis with 2 1/2 cups water for 12 min, add in jasmine rice and cook 10-12 more min.', 'Roast butternut squash: cube the squash, toss with curry powder, 2 tbsp oil, salt, and pepper, and spread on baking sheet. Roast 15-18 min.', 'Marinate cucumbers: thinly slice cucumbers and let sit in 1/2 lemon juice, 1 tsp olive oil, and salt.', 'Prep: thinly slice scallions, tear mint leaves, dice apricots.', 'Heat coconut oil over medium-low heat and cook apricots, raisins, and cashews for 3-4 min. Add finished rice & lentils to skillet, add 1/2 scallions, remaining lemon juice, and salt. Fold in squash.', 'Serve and top with mint and remaining scallions, with cucumbers on the side.'],
-        'photo': '/static/images/jeweled-biryani.jpg',
-        'tags': ['Heather', 'Purple Carrot', 'Entree', 'Asian'],
-        'formatted_tags': '',
-        'source_name':'Purple Carrot',
-        'source': '/static/sources/jeweled-biryani.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/sweet-potato-black-bean-tacos-with-peach-kimchi-citrus-aioli'
     },
     {
         'name': 'Five-spice Tofu Stir-fry',
@@ -446,7 +424,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Asian', 'Healthy'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/five-spice-tofu-stir-fry.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/five-spice-tofu-stir-fry-with-soba-noodles-chile-apricot-sauce'
     },
     {
         'name': 'Italian Cannellini Bean Stew',
@@ -457,18 +435,18 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Soup', 'Italian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/italian-cannellini-bean-stew.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/italian-cannellini-bean-stew-with-mustard-greens-parmesan'
     },
     {
         'name': 'Black Bean Burgers',
-        'ingredients': ['1 sweet potato', '1 can black beans', '1 clove garlic', '1 1/2 tsp cumin', '1 tbsp Worcestershire powder', '1 tbsp flaxseed meal', '2 tbsp garbanzo bean flour', '2 tsp Aleppo pepper flakes','2 tbsp mayo', '2 tsp ketchup', '2 buns', '2 oz pickles', '2 lettuce leaves'],
+        'ingredients': ['1 sweet potato', '1 can black beans', '1 clove garlic', '1 1/2 tsp cumin', '1 tbsp Worcestershire sauce', '1 tbsp flaxseed meal', '2 tbsp garbanzo bean flour', 'salt <3', '2 tsp Aleppo pepper flakes','2 tbsp mayo', '2 tsp ketchup', '2 buns', '2 oz pickles', '2 lettuce leaves', '1 tomato', '1 onion'],
         'ingredients_subset': [],
-        'directions': ['Preheat oven to 425°F.', 'Bake fries: cut sweet potato into wedges, transfer to baking sheet and toss with oil, salt, and pepper, bake for 18-22 min.', 'Blend the burger mix: add black beans, garlic, cumin, Worcestershire powder, flaxseed meal, garbanzo bean flour, Aleppo pepper flakes, and salt to a blender. Pulse a few times until combined, form into 2 patties and chill in fridge.', 'Mix the sauce: combine mayo, ketchup, and salt.', 'Sear the burgers: heat oil over medium-high heat, add burgers and cook 3-5 min each side.', 'Serve and top with pickles, lettuce, and sauce.'],
+        'directions': ['Preheat oven to 425°F.', 'Bake fries: cut sweet potato into wedges, transfer to baking sheet and toss with oil, salt, and pepper, bake for 18-22 min.', 'Blend the burger mix: add black beans, garlic, cumin, Worcestershire powder, flaxseed meal, garbanzo bean flour, Aleppo pepper flakes, and salt to a blender. Pulse a few times until combined, form into 2 patties and chill in fridge.', 'Mix the sauce: combine mayo, ketchup, and salt.','Prepare the toppings: slice the tomato and onion.', 'Sear the burgers: heat oil over medium-high heat, add burgers and cook 3-5 min each side.', 'Serve and top with pickles, lettuce, tomatoes, onion, and sauce.'],
         'photo': '/static/images/black-bean-burgers.jpg',
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Healthy'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/black-bean-burgers.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/black-bean-burgers-with-zucchini-pickles-and-pretzel-buns'
     },
     {
         'name': 'Nicoise Salad',
@@ -479,7 +457,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Salad', 'Vegetarian', 'Healthy'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/nicoise-salad.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/nicoise-salad-with-roasted-mustard-potatoes-and-cherry-tomato-vinaigrette'
     },
     {
         'name': 'Corn Crab Dumplings',
@@ -490,7 +468,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Asian'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/corn-crab-dumplings.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/corn-and-crab-dumplings-with-ginger-fried-rice-and-sweet-chile-sauce'
     },
     {
         'name': 'Tomato-braised Artichokes',
@@ -501,7 +479,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Healthy'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/tomato-braised-artichokes.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/tomato-braised-artichokes-with-cucumber-dill-sauce-and-quinoa'
     },
     {
         'name': 'Crispy Buckwheat Bowl',
@@ -512,7 +490,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Lunch' 'Vegetarian', 'Healthy'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/crispy-buckwheat-bowl.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/crispy-buckwheat-bowl-with-garden-vegetables-and-cilantro-pesto'
     },
     {
         'name': 'Beef Bulgogi Bowl',
@@ -534,7 +512,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Healthy'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/israeli-stuffed-peppers.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/israeli-stuffed-peppers-with-dried-cherries-and-saffron-rice'
     },
     {
         'name': 'Watermelon Poke Bowls',
@@ -545,7 +523,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Asian', 'Healthy'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/watermelon-poke-bowls.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/watermelon-poke-bowl-with-macadamia-nuts-and-sea-lettuce-dressing'
     },
     {
         'name': 'Chicken Sausage Spinach Ricotta Ravioli',
@@ -567,8 +545,415 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Entree', 'Vegetarian', 'Favorite'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/creamy-miso-risotto.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/creamy-miso-risotto-with-roasted-winter-vegetables'
     },
+    {
+        'name': 'Crispy Cauliflower Pakoras',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/crispy-cauliflower-pakoras.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/recipe/crispy-cauliflower-pakoras-with-red-lentil-dal-and-cilantro-chutney',
+     },
+     {
+        'name': 'Tandoori Spiced Tofu',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/tandoori-spiced-tofu.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/tandoori-spiced-tofu-with-apricot-quinoa-pilaf-mango-chutney',
+     },
+     {
+        'name': 'Moroccan Tofu',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/moroccan-tofu.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/recipe/moroccan-tofu-with-asparagus-herby-chermoula-sauce?plan=chefs_choice',
+     },
+     {
+        'name': 'Tandoori Chicken',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/tandoori-chicken.jpg',
+        'tags': ['Heather', 'Healthy', 'Entree'],
+        'formatted_tags': '',
+        'source_name':'Simply Recipes',
+        'source': 'https://www.simplyrecipes.com/recipes/tandoori_chicken/',
+     },
+     {
+        'name': 'Miso Coconut Ramen Bowls',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/miso-coconut-ramen-bowls.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/recipe/miso-coconut-ramen-bowls-with-charred-broccolini-smoked-nori',
+     },
+     {
+        'name': 'Mediterranean Flatbreads',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/mediterranean-flatbreads.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/recipe/mediterranean-flatbreads-with-apricots-cashew-cheese',
+     },
+     {
+        'name': 'Plantain Black Bean Bowls',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/plantain-black-bean-bowls.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/recipe/plantain-black-bean-bowls-with-apple-fennel-slaw-lime-crema',
+     },
+     {
+        'name': 'Quinoa Tabouli',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/quinoa-tabouli.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/quinoa-tabouli-with-roasted-vegetables-tzatziki-sauce',
+     },
+     {
+        'name': 'Grape Leaf Pilaf',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/grape-leaf-pilaf.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/grape-leaf-pilaf-with-dilly-red-beans-sumac-roasted-carrots',
+     },
+     {
+        'name': 'Smoky Portobello Tacos',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/smoky-portobello-tacos.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/smoky-portobello-tacos-with-jalapeno-cashew-sauce-and-spanish-rice',
+     },
+     {
+        'name': 'Walnut Crusted Artichokes',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/walnut-crusted-artichokes.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/walnut-crusted-artichokes-with-dijon-lentils-green-beans',
+     },
+     {
+        'name': 'Sesame Orange Udon',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/sesame-orange-udon.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/sesame-orange-udon-with-asparagus-gingered-cashews',
+     },
+     {
+        'name': 'Moroccan Vegetable Tagine',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/moroccan-vegetable-tagine.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/moroccan-vegetable-tagine-with-harissa-mint-pistachio-pistou',
+     },
+     {
+        'name': 'Baked Cauliflower Parmesan',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/baked-cauliflower-parmesan.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/baked-cauliflower-parmesan-with-zucchini-crispy-butter-beans',
+     },
+     {
+        'name': 'Roasted Vegetable Bowls',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/roasted-vegetable-bowls.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/roasted-vegetable-bowls-with-sunflower-seed-pesto-cashew-cheese',
+     },
+     {
+        'name': 'Mexican Black Bean Skillet',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/mexican-black-bean-skillet.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/mexican-black-bean-skillet-with-tomatillo-citrus-salsa',
+     },
+     {
+        'name': 'Tamarind Cauliflower',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/tamarind-cauliflower.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/tamarind-cauliflower-with-gingered-fried-rice-cashews',
+     },
+     {
+        'name': 'Caribbean Sweet Potatoes',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/caribbean-sweet-potatoes.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/caribbean-sweet-potatoes-with-coconut-rice-mango-salsa',
+     },
+     {
+        'name': 'Chickpea Massaman Curry',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/chickpea-massaman-curry.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/chickpea-massaman-curry-with-farro-baby-bok-choy',
+     },
+     {
+        'name': 'Potato Malai Kofta',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/potato-malai-kofta.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/potato-malai-kofta-with-sauteed-spinach-tomato-chutney',
+     },
+     {
+        'name': 'Thai Lemongrass Soup',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/thai-lemongrass-soup.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/thai-lemongrass-soup-with-crispy-mushrooms-teriyaki-tofu',
+     },
+     {
+        'name': 'Ranchero Bowls',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/ranchero-bowls.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/ranchero-bowls-with-cumin-roasted-vegetables-serrano-yogurt',
+     },
+     {
+        'name': 'Gochujang Veggie Bowls',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/gochujang-veggie-bowls.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/gochujang-veggie-bowls-with-midnight-grains-kimchi-mayo',
+     },
+     {
+        'name': 'Tuscan Stuffed Zucchini',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/tuscan-stuffed-zucchini.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/tuscan-stuffed-zucchini-with-herbed-sausage-lemon-quinoa',
+     },
+     {
+        'name': 'Dal Makhani',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/dal-makhani.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/dal-makhani-with-brown-basmati-rice-tomato-chutney',
+     },
+     {
+        'name': 'Curried Chickpea Bowls',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/curried-chickpea-bowls.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/curried-chickpea-bowls-with-millet-pilaf-spicy-yogurt-cucumbers',
+     },
+     {
+        'name': 'Roasted Red Pepper Shakshuka',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/roasted-red-pepper-shakshuka.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/roasted-red-pepper-shakshuka-with-za-atar-tofu-crispy-shallot',
+     },
+     {
+        'name': 'Mango Curry',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/mango-curry.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/mango-curry-with-chickpea-dumplings-spinach',
+     },
+     {
+        'name': 'Vegetable Green Curry',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/vegetable-green-curry.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/vegetable-green-curry-with-gingered-tempeh-brown-rice',
+     },
+     {
+        'name': 'Thai Skillet Eggplant',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/thai-skillet-eggplant.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/thai-skillet-eggplant-with-crispy-tofu-coconut-jasmine-rice',
+     },
+     {
+        'name': 'Tofu Saag Paneer',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/tofu-saag-paneer.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/tofu-saag-paneer-with-chickpeas-mango-chutney',
+     },
+     {
+        'name': 'Citrus Beet Bowls',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/citrus-beet-bowls.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/citrus-beet-bowls-with-pesto-vinaigrette-crispy-chickpeas',
+     },
+     {
+        'name': 'Dilly Macaroni Salad',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/dilly-macaroni-salad.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/dilly-macaroni-salad-with-broccolini-watermelon-radishes',
+     },
+     {
+        'name': 'Thai Tempeh Khao Soi',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/thai-tempeh-khao-soi.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/tempeh-khao-soi-with-bok-choy-crispy-onions',
+     },
+     {
+        'name': 'Coconut Ramen',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/coconut-ramen.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/coconut-ramen-with-water-spinach-and-crispy-onions',
+     },
+     {
+        'name': 'Muhammara Stuffed Sweet Potatoes',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/muhammara-stuffed-sweet-potatoes.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/mediterranean-stuffed-sweet-potatoes-with-crispy-chickpeas-scallion-cashew-cheese',
+     },
+     {
+        'name': 'Korean BBQ Cauliflower Wings',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/korean-bbq-cauliflower-wings.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
+        'formatted_tags': '',
+        'source_name':'Purple Carrot',
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/korean-bbq-cauliflower-wings-with-kimchi-potato-salad',
+     },
     {
         'name': 'Spinach plum salad',
         'ingredients': ['spinach', '2 plums', '1 lemon'],
@@ -578,7 +963,7 @@ recipes = [
         'tags': ['Heather', 'Purple Carrot', 'Small Plate', 'Healthy'],
         'formatted_tags': '',
         'source_name':'Purple Carrot',
-        'source': '/static/sources/spinach-plum-salad.jpg'
+        'source': 'https://www.purplecarrot.com/plant-based-recipes/oyster-mushroom-dynamite-with-farro-spinach-plum-salad'
     },
     {
         'name': 'Spicy Garlic Shrimp',
@@ -1341,9 +1726,9 @@ recipes = [
      },
      {
         'name': 'Pilaf',
-        'ingredients': ['6 tbsp butter', '1/2 cup Vermicelli (egg noodles)', '4 1/2 cups chicken broth', '2 cups long grain rice (Uncle Ben)'],
+        'ingredients': ['2 tbsp butter', '1/2 cup Vermicelli (egg noodles)', '4 1/2 cups chicken broth', '2 cups long grain rice'],
         'ingredients_subset': [],
-        'directions': ['Melt butter in a saucepan, add Vermicelli until noodles are dark brown, stirring constantly. Set aside.', 'In pot, mix together broth, rice, 3 tbsp butter, 1/4 tsp black pepper, and salt. Simmer 10 min. Mix in browned noodles, cook 10-15 more min. Set aside 5-7 min, serve.', 'OR', 'When rice noodles are brown, mix in rice and add broth. Cover and simmer ~30min.'],
+        'directions': ['Melt butter in a saucepan, add Vermicelli until noodles are dark brown, stirring constantly.', 'When rice noodles are brown, mix in rice and add broth. Cover, bring to a boil, reduce to low and simmer ~30 min.'],
         'photo': '/static/images/pilaf.jpg',
         'tags': ['Heather', 'Small Plate', 'Armenian'],
         'formatted_tags': '',
