@@ -10,7 +10,7 @@ app = Flask(__name__)
 recipes = [
     {
         'name': 'Beans on Toast',
-        'ingredients': [],
+        'ingredients': ['1 lb sweet or hot italian sausage, casing removed (optional)', '5 garlic cloves', '1/2 tsp dried oregano', '1/4 tsp crushed red pepper flakes', '28oz can crushed tomaotes', '5 oz baby spinach', '2 15.5oz cans white beans', '4 tbsp unsalted butter', 'bread', 'parmesan'],
         'ingredients_subset': [],
         'directions': '',
         'photo': '/static/images/beans-on-toast.jpg',
@@ -812,17 +812,6 @@ recipes = [
         'source': 'https://www.purplecarrot.com/plant-based-recipes/ranchero-bowls-with-cumin-roasted-vegetables-serrano-yogurt',
      },
      {
-        'name': 'Gochujang Veggie Bowls',
-        'ingredients': [''],
-        'ingredients_subset': [],
-        'directions': [''],
-        'photo': '/static/images/gochujang-veggie-bowls.jpg',
-        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree', 'Purple Carrot'],
-        'formatted_tags': '',
-        'source_name':'Purple Carrot',
-        'source': 'https://www.purplecarrot.com/plant-based-recipes/gochujang-veggie-bowls-with-midnight-grains-kimchi-mayo',
-     },
-     {
         'name': 'Tuscan Stuffed Zucchini',
         'ingredients': [''],
         'ingredients_subset': [],
@@ -988,6 +977,28 @@ recipes = [
         'source': 'https://www.purplecarrot.com/plant-based-recipes/oyster-mushroom-dynamite-with-farro-spinach-plum-salad'
     },
     {
+        'name': 'Hashweh (Riz w Lahmeh)',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/hashweh.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree'],
+        'formatted_tags': '',
+        'source_name':'Hungrily Homemade',
+        'source': 'https://www.hungrilyhomemade.com/blog/hashweh'
+    },
+    {
+        'name': 'Lentil, Sweet Potato & Green Pea Curry',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/lentil-sweetpotato-pea-curry.jpg',
+        'tags': ['Heather', 'Healthy', 'Vegetarian', 'Entree'],
+        'formatted_tags': '',
+        'source_name':'Hungrily Homemade',
+        'source': 'https://www.hungrilyhomemade.com/blog/vegan-lentil-sweet-potato-green-pea-curry'
+    },
+    {
         'name': 'Prosciutto Peach Chicken with Burrata',
         'ingredients': [''],
         'ingredients_subset': [],
@@ -1064,6 +1075,17 @@ recipes = [
         'source_name':'Online',
         'source': 'https://www.food.com/recipe/4-minute-spicy-garlic-shrimp-107997'
     },
+    {
+        'name': 'Panko chicken with roasted veggies',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': ['Roasted sweet potatoes: cube 2 sweet potatoes. Toss with ~2tbsp real maple syrup, ~2tbsp olive oil, pinch of salt & pepper, and optionally fresh/chopped rosemary. Roast @ 425 for about 20 minutes until tender.', 'Roasted carrots: chop carrots. Toss with some olive oil, pinch of salt n pepper. Roast @ 425 for about 20 minutes until tender.', 'Lemon-garlic couscous: melt 1 tbsp butter in pot over mid-high heat, add garlic and sautee ~1 min. Add couscous, sautee for about 3 minutes to toast it a bit. Add water, bring to boil, cover, reduce heat to simmer, and cook for about 7 minutes. Drain any excess water, add another 1tbsp butter, some lemon zest, a squeeze of lemon juice, salt n pepper.', 'Panko-mozzarella chicken: make panko topping by combining 1/4 cup panko, 1/2 cup shredded mozzarella cheese, 1 tsp italian seasoning, 1 tbsp olive oil, pinch of salt n pepper. Dry 2 chicken breasts, season with salt n peppa. Top chicken with a bit of sour cream, then press the panko mixture into it. Roast chicken at 425F for about 15-20 minutes'],
+        'photo': '/static/images/chicken-couscous-sweetpotatoes-carrots.jpg',
+        'tags': ['Heather', 'Entree', 'Healthy'],
+        'formatted_tags': '',
+        'source_name':'Joe Mahon',
+        'source': '',
+     },
     {
         'name': 'Vegan Tomato Kibbeh',
         'ingredients': ['1 1/2 cups fine bulgur', '5 sprigs fresh parsley', '2 sprigs frest mint', '2 tsp crushed dried mint', '1 sweet onion', '2 large tomatoes', '1/2 red bell pepper', '1/2 tsp cinnamon', '1/4 tsp cayanne pepper', '1 lemon'],
@@ -1152,6 +1174,17 @@ recipes = [
 	    'source_name':'Gimme Some Oven',
 	    'source': 'https://www.gimmesomeoven.com/lemony-lentil-soup/',
 	 },
+     {
+        'name': 'Chicken Noodle Soup',
+        'ingredients': ['chicken broth', 'rotisserie chicken', 'carrots', 'celery', 'pasta'],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/chicken-noodle-soup.jpg',
+        'tags': ['Heather', 'Soup', 'Healthy'],
+        'formatted_tags': '',
+        'source_name':'',
+        'source': '',
+     },
 	 {
 	    'name': 'Breakfast casserole',
 	    'ingredients': ['12 eggs', '1 package shredded mozzerella cheese', '1/4 cup shredded parm', '1 can rotel diced tomatoes and green chilis', '1 lb sausage', '1 bunch kale (~8 oz)', 'garlic powder','Italian seasoning', 'Red pepper flakes'],
@@ -1185,6 +1218,17 @@ recipes = [
 	    'source_name':'Kevin <3',
 	    'source': '',
 	 },
+     {
+        'name': 'Black Bean Burritos',
+        'ingredients': ['black beans', 'corn', 'onion', 'bell peppers', 'salsa', 'sour cream'],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/black-bean-burritos.jpg',
+        'tags': ['Kevin', 'Entree', 'Vegetarian'],
+        'formatted_tags': '',
+        'source_name':'Kevin <3',
+        'source': '',
+     },
 	 {
 	    'name': 'Vegetarian Chili',
 	    'ingredients': ['1 onion', '1 red bell pepper', '1 green bell pepper', '2 carrots', '3 cloves garlic', '1 jalapeño', '1 tbsp tomato paste', '1 15.5 oz can pinto beans', '1 can black beans', '1 can kidney beans', '1 28 oz can tomatoes', '3 cups vegetable broth', '2 tbsp chili powder', '1 tbsp cumin', '2 tsp oregano', 'shredded cheddar cheese', 'sour cream', 'cilantro'],
@@ -1416,6 +1460,28 @@ recipes = [
 	    'source_name':'Anthony Bourdain',
 	    'source': 'http://www.passmethedimsum.com/2017/01/15/laksa-recipe-anthony-bourdain/',
 	 },
+     {
+        'name': 'Ramen',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/ramen.jpg',
+        'tags': ['Heather', 'Entree', 'Asian'],
+        'formatted_tags': '',
+        'source_name':'Just One Cookbook',
+        'source': 'https://www.justonecookbook.com/homemade-chashu-miso-ramen/',
+     },
+     {
+        'name': 'Xiaolongbao',
+        'ingredients': [''],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/xialongbao.jpg',
+        'tags': ['Heather', 'Entree', 'Asian'],
+        'formatted_tags': '',
+        'source_name':'The Woks of Life',
+        'source': 'https://thewoksoflife.com/steamed-shanghai-soup-dumplings-xiaolongbao/',
+     },
 	 {
 	    'name': 'Baked Mac and Cheese',
 	    'ingredients': ['1 box elbows', '2 lbs sharp chedder cheese', '2 eggs', '1 cup whole milk', 'butter'],
@@ -1528,9 +1594,9 @@ recipes = [
      },
      {
         'name': 'Halifax Donair',
-        'ingredients': [''],
-        'ingredients_subset': [],
-        'directions': [''],
+        'ingredients': ['1 lb ground beef', '1/2 lb ground pork', '1/2 lb ground lamb', '1 tbsp ground coriander', '2 tbsp ground garlic powder', '2 tbsp ground oregano', '2 tsp ground thyme', '1 tsp cayenne pepper', '1 tbsp ground black pepper', '1 tbsp salt'],
+        'ingredients_subset': ['3/4 cup evaporated milk', '2/3 cup sugar', '1/4 cup white vinegar', '1/4 tsp garlic powder', '1 white onion', '2 tomatoes', '8 pitas'],
+        'directions': ['Preheat oven to 375F. Line a 9” X 5” X 2 1/2” loaf pan with parchment paper. ', 'Place meat and spices in a mixer fit with the paddle attachment. Mix on low for 30 seconds. Increase speed gradually. Mix on medium-high until meat is even and smooth, about 1 minute. Pack meat into loaf pan. Gently bang the pan against the counter to get rid of any air pockets. Place the loaf pan in a casserole dish halfway filled with water to create a bain-marie. Bake on the middle rack of oven until internal temperature reaches 150F, about 1 hour 20 minutes. While meat is baking, prepare donair sauce by mixing together evaporated milk with sugar in a bowl. Slowly pour in vinegar while mixing. Stir in garlic powder. Refrigerate for a minimum of 15 minutes.', 'Remove meatloaf from the oven. Carefully remove meat from loaf pan and let rest for a minimum of 10 minutes.', 'Thinly slice donair meat and place on a pita. Sprinkle on onion and tomato then drizzle with donair sauce. Roll up and enjoy. Repeat with the remaining ingredients.'],
         'photo': '/static/images/donair.jpg',
         'tags': ['Kevin', 'Entree'],
         'formatted_tags': '',
@@ -1693,9 +1759,9 @@ recipes = [
      },
      {
         'name': 'Losh Kebab',
-        'ingredients': ['1 lb ground beef or lamb', '1/4 cup flour', '1/3 cup tomato paste', '1/3 cup onion', '1/3 tsp allspice', '1/3 tsp black pepper', '3 tsp salt', '2 tsp lemon juice', 'pita bread'],
+        'ingredients': ['1 lb ground beef or lamb', '1/4 cup flour or oats', '1/3 cup tomato paste', '1/3 cup onion', '1/3 tsp allspice', '1/3 tsp black pepper', '2 tsp salt', '2 tsp lemon juice', 'pita bread',],
         'ingredients_subset': [],
-        'directions': ['Prep: chop onion, mix ingredients together, shape into kebabs. Grill or broil for 15 min, flipping halfway through.', 'Serve witih pita and jajek or greek salad.'],
+        'directions': ['Prep: chop onion.', 'Shape: mix meat, flour/oats, tomato paste, onions, lemon, and spices together and shape into kebabs.', 'Cook: grill or broil for 8 min, flip, and broil for 8 more min.', 'Serve: witih pita bread and tzatziki/jajek with pomegranate seeds, or with greek salad.'],
         'photo': '/static/images/losh-kebab.jpg',
         'tags': ['Heather','Entree', 'Healthy', 'Armenian', 'Easy'],
         'formatted_tags': '',
@@ -1945,6 +2011,17 @@ recipes = [
         'source': ' https://www.cbc.ca/news/canada/prince-edward-island/pei-savoury-armenian-cookies-1.4566191'
     },
     {
+        'name': 'Lemon Bars',
+        'ingredients': [''],
+        'ingredients_subset': [''],
+        'directions': [''],
+        'photo': '/static/images/lemon-bars.jpg',
+        'tags': ['Heather', 'Baking'],
+        'formatted_tags': '',
+        'source_name':'CBC News',
+        'source': 'https://www.allrecipes.com/recipe/10294/the-best-lemon-bars/'
+    },
+    {
         'name': 'Kazan Kebab',
         'ingredients': ['2 large eggplants', '1 lb ground beef or lamb', '1 green pepper', '1/4 cup tomato paste', '3/4 cup canned tomato pulp', '1/4 tsp allspice', '1/4 tsp black pepper', '2 tsp salt'],
         'ingredients_subset': ['1 cup tomato juice', '1/8 tsp sugar', '1/4 tsp salt', '1/4 tsp paprika', '1 clove garlic'],
@@ -1961,6 +2038,17 @@ recipes = [
         'ingredients_subset': [],
         'directions': ['Preheat oven to 350 degrees F. Mix oatmeal, milk, and vinegar/lemon juice, set aside.', 'Cream shortening and sugar. Add eggs and 3 bananas. Add oatmeal mixture. Add flour, baking powder, baking soda, and salt.', 'Grease pan and bake for 1 hour.'],
         'photo': '/static/images/banana-bread.jpg',
+        'tags': ['Heather', 'Baking'],
+        'formatted_tags': '',
+        'source_name':'Mom\'s Recipe Book',
+        'source': '/static/sources/banana-bread.jpg'
+    },
+    {
+        'name': 'Healthy Banana Bread',
+        'ingredients': ['3 ripe bananas', '1 tbsp coconut oil', '2 eggs', '3 egg whites', '1 tsp vanilla', '1 tsp maple syrup (optional)'],
+        'ingredients_subset': ['1/2 cup coconut flour', '1/2 cup almond flour', '1 tsp baking soda'],
+        'directions': ['Preheat oven to 370 degrees F. Mix all dry ingredients & wet ingredients in separate bowls. Add dry ingredients to wet, mix, bake for 25-30 min.'],
+        'photo': '/static/images/healthy-banana-bread.jpg',
         'tags': ['Heather', 'Baking'],
         'formatted_tags': '',
         'source_name':'Mom\'s Recipe Book',
@@ -2242,6 +2330,28 @@ recipes = [
         'source': ''
     },
     {
+        'name': 'Chai tea',
+        'ingredients': ['12 cardamom pods, gently crushed', '8 whole black peppercorns', '8 whole cloves', '4 cinnamon sticks', '3 whole allspice', '2 star anise', '1 vanilla bean', '1/8 tsp nutmeg', '4-in piece fresh ginger, sliced', '2 tbsp brown sugar', '4 cups water',  '4 black tea bags'],
+        'ingredients_subset': [],
+        'directions': ['Bring all ingredients except tea bags to a boil. Reduce heat to medium-low, cover, and simmer 15 min.', 'Add tea bags and steep 5 min.', 'Pour through strainer.', 'Mix concentrate with equal parts milk or water, and serve hot or cold.'],
+        'photo': '/static/images/chai-tea.jpg',
+        'tags': ['Heather', 'Drink'],
+        'formatted_tags': '',
+        'source_name':'Gimme Some Oven',
+        'source': 'https://www.gimmesomeoven.com/homemade-chai-tea-recipe/'
+    },
+    {
+        'name': 'Greenpoint',
+        'ingredients': ['2 oz rye whiskey', '1/2 oz green Chartreuse', '1/2 oz sweet vermouth', '1 dash Angostura bitters', '1 dash orange bitters', 'Garnish: lemon twist'],
+        'ingredients_subset': [],
+        'directions': [''],
+        'photo': '/static/images/greenpoint.jpg',
+        'tags': ['Heather', 'Drink'],
+        'formatted_tags': '',
+        'source_name':'liquor.com',
+        'source': 'https://www.liquor.com/recipes/greenpoint/'
+    },
+    {
         'name': 'Char Siu Pork Bao',
         'ingredients': ['BBQ PORK','3 lbs boneless pork shoulder', '1/4 cup sugar', '2 tsp salt', '1/2 tsp five spice powder', '1/4 tsp white pepper', '1/2 tsp sesame oil', '1 tbsp mirin (wine)', '1 tbsp soy sauce', '1 tbsp hoisin sauce', '2 tsp molasses', '1/8 tsp red food coloring', '3 cloves garlic', 'BASTING GLAZE', '2 tbsp honey', '1 tbsp hot water', 'BAO FILLING', '1 tbsp oil', '1/3 cup shallot or red onion', '1 tbsp sugar', '1 tbsp light soy sauce', '2 tsp dark soy sauce', '1 1/2 tbsp oyster sauce', '2 tsp sesame oil', '1/2 cup chicken stock', '2 tbsp flour'],
         'ingredients_subset': ['DOUGH', '1 tsp active dry yeast', '3/4 cup warm water', '2 cups flour', '1 cup cornstarch', '5 tbsp sugar', '1/4 cup canola oil', '2 1/2 tsp baking powder'],
@@ -2441,7 +2551,7 @@ recipes = [
      },
      {
         'name': 'White Chicken Chili',
-        'ingredients': ['1 can rotel', '1 can white beans', '2 tbsp cumin', '1 tbsp oregano', '4 cloves garlic', '4 tbsp dried onion', '7 oz salsa verde', '32 oz chicken broth', '1 rotisserie chicken'],
+        'ingredients': ['1 can rotel', '1 can white beans', '1 tbsp cumin', '1 tsp oregano', '4 cloves garlic', '2 tbsp dried onion', '7 oz salsa verde', '32 oz chicken broth', '1 rotisserie chicken'],
         'ingredients_subset': [],
         'directions': ['Add all ingredients except rotisserie chicken to large pot and bring to a simmer.', 'Shred rotisserie chicken and add to pot.', 'Cover and simmer for 30 min.', 'Tip: red lobster biscuits are a good side.'],
         'photo': '/static/images/white-chicken-chili.jpg',
