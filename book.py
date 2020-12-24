@@ -97,6 +97,17 @@ recipes = [
         'source': 'https://www.bonappetit.com/recipe/spicy-baked-pasta-with-cheddar-and-broccoli-rabe'
     },
     {
+        'name': 'Chicken Katsu Sandwiches',
+        'ingredients': [],
+        'ingredients_subset': [],
+        'directions': '',
+        'photo': '/static/images/chicken-katsu-sandwich.jpg',
+        'tags': ['Kevin', 'Bon Appetit', 'Entree', 'Healthy'],
+        'formatted_tags': '',
+        'source_name':'Bon Appetit',
+        'source': 'https://www.bonappetit.com/recipe/spicy-chicken-katsu-sandwiches'
+    },
+    {
         'name': 'Halftime Chili',
         'ingredients': [],
         'ingredients_subset': [],
@@ -1892,8 +1903,8 @@ recipes = [
      {
         'name': 'Manti',
         'ingredients': ['1 lb beef or lamb', '1/3 cup onion', '1/4 cup flour', '1/3 cup tomato paste', '1/3 tsp allspice', '1 tsp salt', '1/3 tsp black pepper'],
-        'ingredients_subset': ['2 eggs', '2+ cups flour', '3 cups chicken broth', '1/2 cup tomato juice', 'yogurt', '2 cloves garlic'],
-        'directions': ['Make dough: put flour on counter. Make a well in the center and add eggs and some olive oil and salt. Slowly blend together, knead, let stand in fridge for 30 min.', 'Preheat oven to 350 degrees F.', 'Make filling: finely chop onion. Mix together lamb, onion, flour, tomato paste, and spices.', 'Roll out dough to ~1/16 inch thick and cut into ~1.5 inch squares.', 'Place 1 tsp meat stuffing in each square. Fold into a canoe shape by pinching opposite corners together.', 'Bake until light brown, ~30 min.', 'Pour chicken broth and tomato juice over manties, completely covering. Bake 25 more min.', 'Finely chop garlic and mix with yogurt. Serve together.'],
+        'ingredients_subset': ['3 eggs', '3+ cups flour', '4 cups chicken broth', '3/4 cup tomato juice', 'plain greek yogurt', '3+ cloves garlic'],
+        'directions': ['Make dough: put flour on counter. Make a well in the center and add eggs and some olive oil and salt. Slowly blend together with a fork, knead, wrap in plastic and let stand in fridge for 30 min.', 'Preheat oven to 350 degrees F.', 'Make filling: finely chop onion. Mix together lamb, onion, flour, tomato paste, and spices.', 'Prepare dough: Its easiest to break dough into 4 pieces, keep unused pieces covered while you work. Roll it out to ~1/16 inch thick (setting 6), taking care to not add too much flour (you want it a little sticky to form the boats). Cut into ~1.5 inch squares (the size is flexible but the more square they are, the easier they will be to fold).', 'Stuff and form boats: place 1 tsp meat stuffing in each square. Fold into a canoe shape by pinching opposite corners together.', 'Bake until light brown, ~30 min.', 'Pour chicken broth and tomato juice over manties, completely covering. Bake 25 more min (boats will be a little crunchy, reduce baking time if you prefer them soft).', 'Finely chop garlic and mix with yogurt. Serve together.'],
         'photo': '/static/images/manti.jpg',
         'tags': ['Heather', 'Small Plate', 'Armenian'],
         'formatted_tags': '',
@@ -2333,7 +2344,7 @@ recipes = [
         'name': 'Chai tea',
         'ingredients': ['12 cardamom pods, gently crushed', '8 whole black peppercorns', '8 whole cloves', '4 cinnamon sticks', '3 whole allspice', '2 star anise', '1 vanilla bean', '1/8 tsp nutmeg', '4-in piece fresh ginger, sliced', '2 tbsp brown sugar', '4 cups water',  '4 black tea bags'],
         'ingredients_subset': [],
-        'directions': ['Bring all ingredients except tea bags to a boil. Reduce heat to medium-low, cover, and simmer 15 min.', 'Add tea bags and steep 5 min.', 'Pour through strainer.', 'Mix concentrate with equal parts milk or water, and serve hot or cold.'],
+        'directions': ['Bring all ingredients except tea bags to a boil. Reduce heat to medium-low, cover, and simmer 15 min.', 'Add tea bags and steep 5 min.', 'Pour through strainer.', 'Mix 1/2 concentrate and 1/2 milk or water for a mild flavor, or 3/4 concentrate and 1/4 milk or water for a stronger flavor. You can whisk the milk to make it a latte. Serve hot or cold over ice. '],
         'photo': '/static/images/chai-tea.jpg',
         'tags': ['Heather', 'Drink'],
         'formatted_tags': '',
