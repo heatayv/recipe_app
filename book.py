@@ -108,6 +108,17 @@ recipes = [
         'source': 'https://www.bonappetit.com/recipe/spicy-chicken-katsu-sandwiches'
     },
     {
+        'name': 'Katsu Curry',
+        'ingredients': [],
+        'ingredients_subset': [],
+        'directions': '',
+        'photo': '/static/images/katsu-curry.jpg',
+        'tags': ['Kevin', 'Entree'],
+        'formatted_tags': '',
+        'source_name':'',
+        'source': ''
+    },
+    {
         'name': 'Halftime Chili',
         'ingredients': [],
         'ingredients_subset': [],
