@@ -109,9 +109,9 @@ recipes = [
     },
     {
         'name': 'Katsu Curry',
-        'ingredients': [],
+        'ingredients': ['1/4 cup rice for two people, add rice vinegar to taste', '2 potatoes', '2 carrots', '1 med/small onion'],
         'ingredients_subset': [],
-        'directions': '',
+        'directions': ['Melt 1-2tbsp butter and as much oil', 'Sautée onion', 'Add potatoes and carrots, cook a few minutes, add 3 tablespoons curry powder, 1 teaspoon paprika. Stir and cook a minute', 'Stir in a tablespoon or two of flour', 'Add 2 cups chicken stock, 1 cup water', 'Simmer', 'Pound chicken and dredge, cook in 350 degree oil'],
         'photo': '/static/images/katsu-curry.jpg',
         'tags': ['Kevin', 'Entree'],
         'formatted_tags': '',
@@ -1413,8 +1413,8 @@ recipes = [
 	    'photo': '/static/images/cola-chicken-wings.jpg',
 	    'tags': ['Kevin', 'Entree'],
 	    'formatted_tags': '',
-	    'source_name':'',
-	    'source': '',
+	    'source_name':'Allrecipes',
+	    'source': 'https://www.allrecipes.com/recipe/8558/wings-in-cola/',
 	 },
      {
         'name': 'Chinese Cucumber Salad',
