@@ -86,7 +86,7 @@ recipes = [
         'source': 'https://www.bonappetit.com/recipe/tomato-toast-with-chives-and-sesame-seeds'
     },
     {
-        'name': 'Baked Pasta with Cheddar & Broccoli',
+        'name': 'Baked Pasta with Cheddar & Broccoli testtest',
         'ingredients': [],
         'ingredients_subset': [],
         'directions': '',
@@ -1902,9 +1902,9 @@ recipes = [
      },
      {
         'name': 'Cheoreg',
-        'ingredients': ['10 cups flour', '1 1/2 sticks margarine (Fleischmann\'s)', '1 stick butter', '1/2 tsp mahleb', '1 tsp black caraway seeds', '1 pkg yeast', '2 cups milk', '1 1/2 cups sugar', '7 eggs', '1/2 tsp salt', 'sesame seeds'],
+        'ingredients': ['5+ cups flour', '6 tbsp margarine', '1/2 stick butter', '1/4 tsp mahleb', '1/2 tsp black caraway seeds', '1/2 pkg yeast', '1 cup whole milk', '3/4 cup sugar', '4 eggs', '1/4 tsp salt', 'sesame seeds (optional)'],
         'ingredients_subset': [],
-        'directions': ['Melt butter and margerine, cool, add mahleb and caraway. Pour into flour.', 'Dissolve yeast in 1/4 cup lukewarm water and add to flour mixture.', 'Melt milk and sugar together, cool to lukewarm temperatuer then add to flour mixture. Knead with hands.', 'In a bowl, beat together 6 eggs with salt. Add to flour mixture.', 'Knead until dough is elastic. Put 2 tbsp butter on hands and spread over dough. Cover with damp towel and let rise 8 hours.', 'Preheat oven to 400 degrees F. Roll and stretch dough into braids, adding flour if needed. Brush with 1 beaten egg. Sprinkle with sesame seeds. Bake 10-15 min, reduce heat to 350 degrees F, bake 5 more min.'],
+        'directions': ['Prep: Measure 5 cups flour into a large bowl. Melt butter and margerine together in a small saucepan, let cool. Melt milk and sugar together in a small saucepan, let cool. Dissolve yeast in 1/8 cup lukewarm water.', 'Mix: Add mahleb and caraway seeds to melted butter/margarine, then add that mixture to flour mixture. Add yeast to flour mixture. Add milk/sugar to flour mixture. Knead just until mixed together.', 'Finish dough: Beat 3 eggs together with salt, add to flour mixture. Knead until dough is elastic, might need to add flour (up to 1 cup) to form a cohesive dough. It will be sticky, but when it seems good cover hands in butter, spread over surface of dough, and cover with damp towel.','Rest: Let rise for 8-12 hours. Original recipe is 8 hrs, but thats very annoying to plan so sometimes I do 10 or 12. I am just realizing now though that I did 1/2 the ingredients for the original recipe, so maybe it can rise for less than 8 hours? Not sure how that works.', 'Bake: Preheat oven to 400 degrees. Separate dough into 6 even balls, roll and stretch into logs, braid 3 strands together at a time, forming 2 big braids on parchment-paper-lined baking sheets. Beat 1 egg and brush on top, sprinkle with sesame seeds (optional), and bake 10-15 min. Reduce heat to 350 degrees and bake 5-7 more min / until bottom is golden brown and a toothpick comes out clean.'],
         'photo': '/static/images/choreg.jpg',
         'tags': ['Heather', 'Small Plate', 'Armenian'],
         'formatted_tags': '',
